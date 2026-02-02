@@ -1,0 +1,3951 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Impact de l’information (Q1 avant vs Q2 après)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="analyse_intervention_files/libs/clipboard/clipboard.min.js"></script>
+<script src="analyse_intervention_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="analyse_intervention_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="analyse_intervention_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="analyse_intervention_files/libs/quarto-html/popper.min.js"></script>
+<script src="analyse_intervention_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="analyse_intervention_files/libs/quarto-html/anchor.min.js"></script>
+<link href="analyse_intervention_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="analyse_intervention_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="analyse_intervention_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="analyse_intervention_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="analyse_intervention_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="analyse_intervention_files/libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="analyse_intervention_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="analyse_intervention_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="analyse_intervention_files/libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="analyse_intervention_files/libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="analyse_intervention_files/libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="analyse_intervention_files/libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="analyse_intervention_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="analyse_intervention_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="analyse_intervention_files/libs/leaflet-binding-2.2.3/leaflet.js"></script>
+<script src="analyse_intervention_files/libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="analyse_intervention_files/libs/leaflet-providers-plugin-2.2.3/leaflet-providers-plugin.js"></script>
+<link href="analyse_intervention_files/libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="analyse_intervention_files/libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table des matières</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
+  <ul class="collapse">
+  <li><a href="#objectif" id="toc-objectif" class="nav-link" data-scroll-target="#objectif"><span class="header-section-number">1.1</span> Objectif</a></li>
+  <li><a href="#méthodes" id="toc-méthodes" class="nav-link" data-scroll-target="#méthodes"><span class="header-section-number">1.2</span> Méthodes</a></li>
+  </ul></li>
+  <li><a href="#données-et-préparation" id="toc-données-et-préparation" class="nav-link" data-scroll-target="#données-et-préparation"><span class="header-section-number">2</span> Données et préparation</a>
+  <ul class="collapse">
+  <li><a href="#données" id="toc-données" class="nav-link" data-scroll-target="#données"><span class="header-section-number">2.1</span> Données</a></li>
+  <li><a href="#préparation-des-scores" id="toc-préparation-des-scores" class="nav-link" data-scroll-target="#préparation-des-scores"><span class="header-section-number">2.2</span> Préparation des scores</a></li>
+  </ul></li>
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description"><span class="header-section-number">3</span> Description</a>
+  <ul class="collapse">
+  <li><a href="#langue-des-questionnaires-français-vs-créole" id="toc-langue-des-questionnaires-français-vs-créole" class="nav-link" data-scroll-target="#langue-des-questionnaires-français-vs-créole"><span class="header-section-number">3.1</span> Langue des questionnaires (français vs créole)</a></li>
+  <li><a href="#appariement" id="toc-appariement" class="nav-link" data-scroll-target="#appariement"><span class="header-section-number">3.2</span> Appariement</a></li>
+  <li><a href="#proportion-dappariement-q1-q2" id="toc-proportion-dappariement-q1-q2" class="nav-link" data-scroll-target="#proportion-dappariement-q1-q2"><span class="header-section-number">3.3</span> Proportion d’appariement (Q1 → Q2)</a></li>
+  <li><a href="#schéma-de-flux-effectifs" id="toc-schéma-de-flux-effectifs" class="nav-link" data-scroll-target="#schéma-de-flux-effectifs"><span class="header-section-number">3.4</span> Schéma de flux (effectifs)</a></li>
+  <li><a href="#attrition-selon-lâge-q1-appariées-vs-q1-non-appariées" id="toc-attrition-selon-lâge-q1-appariées-vs-q1-non-appariées" class="nav-link" data-scroll-target="#attrition-selon-lâge-q1-appariées-vs-q1-non-appariées"><span class="header-section-number">3.5</span> Attrition selon l’âge (Q1 appariées vs Q1 non appariées)</a></li>
+  </ul></li>
+  <li><a href="#résultats-principaux" id="toc-résultats-principaux" class="nav-link" data-scroll-target="#résultats-principaux"><span class="header-section-number">4</span> Résultats principaux</a>
+  <ul class="collapse">
+  <li><a href="#résultats-clés-lecture-rapide" id="toc-résultats-clés-lecture-rapide" class="nav-link" data-scroll-target="#résultats-clés-lecture-rapide"><span class="header-section-number">4.1</span> Résultats clés (lecture rapide)</a></li>
+  <li><a href="#appariement-et-population-analysée" id="toc-appariement-et-population-analysée" class="nav-link" data-scroll-target="#appariement-et-population-analysée"><span class="header-section-number">4.2</span> Appariement et population analysée</a></li>
+  <li><a href="#impact-global-sur-le-score" id="toc-impact-global-sur-le-score" class="nav-link" data-scroll-target="#impact-global-sur-le-score"><span class="header-section-number">4.3</span> Impact global sur le score</a></li>
+  <li><a href="#comparaison-des-moyennes-table" id="toc-comparaison-des-moyennes-table" class="nav-link" data-scroll-target="#comparaison-des-moyennes-table"><span class="header-section-number">4.4</span> Comparaison des moyennes (table)</a></li>
+  <li><a href="#distribution-des-scores-initiaux-q1" id="toc-distribution-des-scores-initiaux-q1" class="nav-link" data-scroll-target="#distribution-des-scores-initiaux-q1"><span class="header-section-number">4.5</span> Distribution des scores initiaux (Q1)</a></li>
+  <li><a href="#exploration-gain-global-selon-lâge" id="toc-exploration-gain-global-selon-lâge" class="nav-link" data-scroll-target="#exploration-gain-global-selon-lâge"><span class="header-section-number">4.6</span> Exploration : gain global selon l’âge</a></li>
+  <li><a href="#score-initial-q1-selon-lâge" id="toc-score-initial-q1-selon-lâge" class="nav-link" data-scroll-target="#score-initial-q1-selon-lâge"><span class="header-section-number">4.7</span> Score initial (Q1) selon l’âge</a></li>
+  <li><a href="#scores-initiaux-par-question-q1" id="toc-scores-initiaux-par-question-q1" class="nav-link" data-scroll-target="#scores-initiaux-par-question-q1"><span class="header-section-number">4.8</span> Scores initiaux par question (Q1)</a></li>
+  </ul></li>
+  <li><a href="#analyse-par-question" id="toc-analyse-par-question" class="nav-link" data-scroll-target="#analyse-par-question"><span class="header-section-number">5</span> Analyse par question</a>
+  <ul class="collapse">
+  <li><a href="#résultats-par-question" id="toc-résultats-par-question" class="nav-link" data-scroll-target="#résultats-par-question"><span class="header-section-number">5.1</span> Résultats par question</a></li>
+  <li><a href="#exploration-par-âge-gain-par-question-du-barème" id="toc-exploration-par-âge-gain-par-question-du-barème" class="nav-link" data-scroll-target="#exploration-par-âge-gain-par-question-du-barème"><span class="header-section-number">5.2</span> Exploration par âge : gain par question (% du barème)</a></li>
+  <li><a href="#synthèse-des-gains-par-question" id="toc-synthèse-des-gains-par-question" class="nav-link" data-scroll-target="#synthèse-des-gains-par-question"><span class="header-section-number">5.3</span> Synthèse des gains par question</a></li>
+  <li><a href="#tests-par-question-appariés" id="toc-tests-par-question-appariés" class="nav-link" data-scroll-target="#tests-par-question-appariés"><span class="header-section-number">5.4</span> Tests par question (appariés)</a></li>
+  <li><a href="#graphique-score-moyen-par-question-avant-vs-après" id="toc-graphique-score-moyen-par-question-avant-vs-après" class="nav-link" data-scroll-target="#graphique-score-moyen-par-question-avant-vs-après"><span class="header-section-number">5.5</span> Graphique : score moyen par question (avant vs après)</a></li>
+  <li><a href="#effet-plafond-par-question-proportion-au-score-maximal" id="toc-effet-plafond-par-question-proportion-au-score-maximal" class="nav-link" data-scroll-target="#effet-plafond-par-question-proportion-au-score-maximal"><span class="header-section-number">5.6</span> Effet plafond par question : proportion au score maximal</a></li>
+  <li><a href="#distribution-des-scores-par-question-1-graphique-par-question" id="toc-distribution-des-scores-par-question-1-graphique-par-question" class="nav-link" data-scroll-target="#distribution-des-scores-par-question-1-graphique-par-question"><span class="header-section-number">5.7</span> Distribution des scores par question (1 graphique par question)</a></li>
+  <li><a href="#vue-densemble-distribution-q1-vs-q2-facettes" id="toc-vue-densemble-distribution-q1-vs-q2-facettes" class="nav-link" data-scroll-target="#vue-densemble-distribution-q1-vs-q2-facettes"><span class="header-section-number">5.8</span> Vue d’ensemble : distribution Q1 vs Q2 (facettes)</a></li>
+  <li><a href="#forest-plot-récapitulatif-gain-global-par-question" id="toc-forest-plot-récapitulatif-gain-global-par-question" class="nav-link" data-scroll-target="#forest-plot-récapitulatif-gain-global-par-question"><span class="header-section-number">5.9</span> Forest plot récapitulatif (gain global + par question)</a></li>
+  </ul></li>
+  <li><a href="#résultats" id="toc-résultats" class="nav-link" data-scroll-target="#résultats"><span class="header-section-number">6</span> Résultats</a>
+  <ul class="collapse">
+  <li><a href="#biais-de-sélection-potentiel-q1-appariées-vs-q1-non-appariées" id="toc-biais-de-sélection-potentiel-q1-appariées-vs-q1-non-appariées" class="nav-link" data-scroll-target="#biais-de-sélection-potentiel-q1-appariées-vs-q1-non-appariées"><span class="header-section-number">6.1</span> Biais de sélection potentiel : Q1 appariées vs Q1 non appariées</a></li>
+  <li><a href="#mise-en-évidence-de-la-moyenne-initiale-q1" id="toc-mise-en-évidence-de-la-moyenne-initiale-q1" class="nav-link" data-scroll-target="#mise-en-évidence-de-la-moyenne-initiale-q1"><span class="header-section-number">6.2</span> Mise en évidence de la moyenne initiale (Q1)</a></li>
+  <li><a href="#score-global-au-q2-q2-total" id="toc-score-global-au-q2-q2-total" class="nav-link" data-scroll-target="#score-global-au-q2-q2-total"><span class="header-section-number">6.3</span> Score global au Q2 (Q2 total)</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">7</span> Discussion</a>
+  <ul class="collapse">
+  <li><a href="#résultats-principaux-1" id="toc-résultats-principaux-1" class="nav-link" data-scroll-target="#résultats-principaux-1"><span class="header-section-number">7.1</span> Résultats principaux</a></li>
+  <li><a href="#limites-méthodologiques" id="toc-limites-méthodologiques" class="nav-link" data-scroll-target="#limites-méthodologiques"><span class="header-section-number">7.2</span> Limites méthodologiques</a></li>
+  <li><a href="#recommandations-pour-une-future-étude" id="toc-recommandations-pour-une-future-étude" class="nav-link" data-scroll-target="#recommandations-pour-une-future-étude"><span class="header-section-number">7.3</span> Recommandations pour une future étude</a></li>
+  <li><a href="#version-thèse-paragraphe" id="toc-version-thèse-paragraphe" class="nav-link" data-scroll-target="#version-thèse-paragraphe"><span class="header-section-number">7.4</span> Version thèse (paragraphe)</a></li>
+  </ul></li>
+  <li><a href="#annexes-techniques-détails-statistiques" id="toc-annexes-techniques-détails-statistiques" class="nav-link" data-scroll-target="#annexes-techniques-détails-statistiques"><span class="header-section-number">8</span> Annexes techniques (détails statistiques)</a>
+  <ul class="collapse">
+  <li><a href="#diagnostic-visuel-gain-global" id="toc-diagnostic-visuel-gain-global" class="nav-link" data-scroll-target="#diagnostic-visuel-gain-global"><span class="header-section-number">8.1</span> Diagnostic visuel (gain global)</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="analyse_intervention.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Impact de l’information (Q1 avant vs Q2 après)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
+<section id="objectif" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="objectif"><span class="header-section-number">1.1</span> Objectif</h3>
+<p>Objectif principal : évaluer l’impact d’une information sur les connaissances des risques de l’alcool pendant la grossesse, en comparant le <strong>score global</strong> avant (Q1) et après (Q2) information, chez les mêmes participantes.</p>
+<p>Objectifs secondaires : décrire (i) la proportion de participantes ayant un gain &gt;= 3 points, (ii) l’évolution individuelle (spaghetti), (iii) les évolutions <strong>par question</strong>, et (iv) l’hétérogénéité des scores/gains selon l’âge (exploratoire).</p>
+</section>
+<section id="méthodes" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="méthodes"><span class="header-section-number">1.2</span> Méthodes</h3>
+<div class="callout callout-style-default callout-note callout-titled" title="Approche méthodologique en résumé">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Approche méthodologique en résumé
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Il s’agit d’une étude <strong>avant–après</strong> visant à mesurer l’évolution des connaissances des participantes suite à une intervention d’information. La même population a répondu à un questionnaire avant (Q1) puis après (Q2).</p>
+<p>L’analyse repose sur la comparaison des scores Q1 et Q2 <strong>chez des patientes appairées</strong>, ce qui est la méthode la plus fiable pour mesurer un changement.</p>
+<p>En l’absence de critère d’indentification unique, l’appariement a été réalisé via des identifiants partiels (âge et commune de résidence), puis validé manuellement. Seules les paires complètes (Q1 et Q2) ont été retenues pour l’analyse principale.</p>
+<ul>
+<li><strong>Tests statistiques :</strong> On utilise le <strong>test t apparié</strong> pour vérifier que l’amélioration n’est pas due au hasard. <em>Une méthode de bootstrap permet de réaliser un test t sans présupposer de normalité des données.</em></li>
+<li><strong>Quantification de l’effet :</strong> On calcule le <strong>gain moyen</strong> et son <strong>intervalle de confiance à 95%</strong> pour connaître la taille de l’amélioration et sa plage de valeurs plausibles. Le <strong>bootstrap</strong> valide ces résultats sans présupposer de la normalité des données.</li>
+<li><strong>Pertinence et effet plafond :</strong> On analyse la proportion de participantes avec un <strong>gain &gt;= 3 points</strong> et on utilise une <strong>régression logistique</strong> pour comprendre comment la probabilité d’un “gros gain” diminue quand le score de départ est déjà élevé.</li>
+<li><strong>Analyses exploratoires :</strong> On regarde ensuite les différences par <strong>âge</strong> et par <strong>question</strong> pour affiner la compréhension.</li>
+</ul>
+</div>
+</div>
+<p>Il s’agit d’une étude avant–après à données appariées évaluant l’impact d’une information sur les connaissances des participantes sur les risques de l’alcool pendant la grossesse, mesurées par deux passations d’un questionnaire (Q1 avant, Q2 après).</p>
+<p>L’appariement des patientes a été réalisé via des identifiants partiels (âge et commune de résidence), puis validé manuellement. Seules les paires complètes ont été retenues pour l’analyse principale. Le critère de jugement principal est le score global, recalculé à partir des réponses à l’aide d’une clé de correction et d’un barème prédéfinis : les points des 8 questions sont sommés (total /40), puis divisés par 2 pour obtenir une note sur 20. Pour les questions à réponses multiples, un point est attribué à chaque proposition correcte selon le barème ; aucune pénalité n’est appliquée en cas de réponses supplémentaires non attendues. Les scores par question (en points, de 0 au maximum de la question) et le gain individuel (Q2 − Q1) ont également été calculés ; pour comparer des questions de barèmes différents, les gains ont aussi été exprimés en pourcentage du barème.</p>
+<p>Les variables quantitatives sont décrites par moyenne ± écart-type (et médiane [IQR] lorsque pertinent) et les variables qualitatives par effectif et pourcentage. L’effet global de l’intervention sur le score global a été évalué en comparant Q1 et Q2 au sein des mêmes participantes, à l’aide d’un test t apparié (Student), dans le sens “après &gt; avant”, en appliquant une procédure de <em>bootstrap</em> (1000 réplications) pour s’affranchir de l’hypothèse de normalité des données. La pertinence clinique a été décrite en (i) comparant le gain moyen au seuil de 3 points et (ii) calculant la proportion de participantes atteignant un gain &gt;= 3 points (avec intervalle de confiance binomial). Un test de signe (binomial) a également été utilisé pour comparer la fréquence des améliorations (gain &gt; 0) à celle des diminutions (gain &lt; 0), en ignorant les égalités. Enfin, une analyse exploratoire a estimé la probabilité d’un gain &gt;= 3 points en fonction du score initial, de l’âge (approché en années) et de la langue du questionnaire (français vs créole), via une régression logistique multivariable.</p>
+<p>Des analyses exploratoires ont étudié l’hétérogénéité des scores initiaux et des gains selon la tranche d’âge (tests de Kruskal–Wallis et modèle linéaire ajusté sur le score initial). Enfin, des analyses par question ont comparé les scores avant/après (tests appariés) et décrit les distributions de scores en points (proportions avec intervalles de confiance de Wilson), avec des tests de McNemar par niveau de score (p &lt; 0,05). Ces analyses “par question” sont présentées à titre exploratoire, sans correction de multiplicité. Toutes les analyses ont été conduites sous R 4.5.2, avec un seuil de significativité de 5% (alpha = 0,05) et des intervalles de confiance à 95%.</p>
+</section>
+</section>
+<section id="données-et-préparation" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="données-et-préparation"><span class="header-section-number">2</span> Données et préparation</h2>
+<section id="données" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="données"><span class="header-section-number">2.1</span> Données</h3>
+<p>Ce rapport utilise le fichier apparié <code>Q1_Q2_apparie.csv</code> (1 ligne = 1 participante du Q1, appariée à une ligne du Q2 quand possible).</p>
+</section>
+<section id="préparation-des-scores" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="préparation-des-scores"><span class="header-section-number">2.2</span> Préparation des scores</h3>
+</section>
+</section>
+<section id="description" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="description"><span class="header-section-number">3</span> Description</h2>
+<p>Pour visualiser la portée de l’étude, la carte suivante montre la répartition des participantes sur l’île de La Réunion. Chaque commune est représentée par un marqueur, dont la couleur et la taille reflètent le nombre de répondantes.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-8483341071def39c49a5" style="width:100%;height:568px;"></div>
+<script type="application/json" data-for="htmlwidget-8483341071def39c49a5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[-21.2419,-21.2486,-21.34,-20.9394,-20.9264,-21.0339,-20.8789,-21.3786,-21.1664,-21.2867,-21.0097,-21.3419,-21.3594,-20.8969,-21.1272,-21.2781],[55.3333,55.4703,55.57,55.2872,55.3358,55.7128,55.4481,55.6192,55.2869,55.4092,55.2697,55.4778,55.7678,55.5492,55.7922,55.5153],[11.31370849898476,4,6.928203230275509,8,6.928203230275509,8,16.49242250247064,5.656854249492381,13.2664991614216,11.31370849898476,24.33105012119288,22.62741699796952,4,8.944271909999159,5.656854249492381,11.31370849898476],null,null,{"interactive":true,"className":"","stroke":true,"color":"#111111","weight":2,"opacity":0.5,"fill":true,"fillColor":["#6801A6","#0D0887","#2F0693","#3B0599","#2F0693","#3B0599","#BD3786","#21078D","#880CA3","#6801A6","#F0F921","#FDBF2D","#0D0887","#46039F","#21078D","#6801A6"],"fillOpacity":0.9},null,null,["<b>Les Avirons<\/b><br/>n = 8","<b>Entre-Deux<\/b><br/>n = 1","<b>Petite-Île<\/b><br/>n = 3","<b>Le Port<\/b><br/>n = 4","<b>La Possession<\/b><br/>n = 3","<b>Saint-Benoît<\/b><br/>n = 4","<b>Saint-Denis<\/b><br/>n = 17","<b>Saint-Joseph<\/b><br/>n = 2","<b>Saint-Leu<\/b><br/>n = 11","<b>Saint-Louis<\/b><br/>n = 8","<b>Saint-Paul<\/b><br/>n = 37","<b>Saint-Pierre<\/b><br/>n = 32","<b>Saint-Philippe<\/b><br/>n = 1","<b>Sainte-Marie<\/b><br/>n = 5","<b>Sainte-Rose<\/b><br/>n = 2","<b>Le Tampon<\/b><br/>n = 8"],null,["Les Avirons : 8","Entre-Deux : 1","Petite-Île : 3","Le Port : 4","La Possession : 3","Saint-Benoît : 4","Saint-Denis : 17","Saint-Joseph : 2","Saint-Leu : 11","Saint-Louis : 8","Saint-Paul : 37","Saint-Pierre : 32","Saint-Philippe : 1","Sainte-Marie : 5","Sainte-Rose : 2","Le Tampon : 8"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLegend","args":[{"colors":["#0D0887 , #46039F 11.1111111111111%, #7D06A6 25%, #AD2892 38.8888888888889%, #D24F72 52.7777777777778%, #ED7953 66.6666666666667%, #FCAA36 80.5555555555556%, #F7E224 94.4444444444444%, #F0F921 "],"labels":["5","10","15","20","25","30","35"],"na_color":null,"na_label":"NA","opacity":0.9,"position":"bottomright","type":"numeric","title":"Effectif (Q1)","extra":{"p_1":0.1111111111111111,"p_n":0.9444444444444444},"layerId":null,"className":"info legend","group":null}]}],"setView":[[-21.12,55.52],10,[]],"limits":{"lat":[-21.3786,-20.8789],"lng":[55.2697,55.7922]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<section id="langue-des-questionnaires-français-vs-créole" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="langue-des-questionnaires-français-vs-créole"><span class="header-section-number">3.1</span> Langue des questionnaires (français vs créole)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-langue-q1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-langue-q1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="analyse_intervention_files/figure-html/fig-langue-q1-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-langue-q1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Langue du questionnaire (Q1)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-langue-q1-bar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-langue-q1-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="analyse_intervention_files/figure-html/fig-langue-q1-bar-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-langue-q1-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Langue du questionnaire Q1 (barplot)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-langue-q2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-langue-q2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="analyse_intervention_files/figure-html/fig-langue-q2-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-langue-q2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Langue du questionnaire (Q2) et attrition
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-langue-q2-bar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-langue-q2-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="analyse_intervention_files/figure-html/fig-langue-q2-bar-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-langue-q2-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Langue du questionnaire Q2 et non-appariés (barplot)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="appariement" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="appariement"><span class="header-section-number">3.2</span> Appariement</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Indicateur</th>
+<th style="text-align: left;">Effectif</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Répondantes Q1 (total)</td>
+<td style="text-align: left;">172</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Réponses Q2 (total)</td>
+<td style="text-align: left;">106</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Paires Q1–Q2 (appariées)</td>
+<td style="text-align: left;">103</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Q1 non appariées</td>
+<td style="text-align: left;">69</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="proportion-dappariement-q1-q2" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="proportion-dappariement-q1-q2"><span class="header-section-number">3.3</span> Proportion d’appariement (Q1 → Q2)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-appariement-bar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-appariement-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="analyse_intervention_files/figure-html/fig-appariement-bar-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-appariement-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Proportion d’appariement (barplot)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Ici, <strong>103/172</strong> réponses du Q1 sont appariées (soit 59.9%), et l’on retrouve <strong>103/106</strong> réponses du Q2 (soit 97.2%).</p>
+<p>L’analyse principale avant–après porte sur l’échantillon “Appariées”.</p>
+</section>
+<section id="schéma-de-flux-effectifs" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="schéma-de-flux-effectifs"><span class="header-section-number">3.4</span> Schéma de flux (effectifs)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Étape</th>
+<th style="text-align: left;">Effectif</th>
+<th style="text-align: left;">Proportion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Q1 (total)</td>
+<td style="text-align: left;">172</td>
+<td style="text-align: left;">100%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Q2 (total, non apparié)</td>
+<td style="text-align: left;">106</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Paires Q1–Q2 (analysées)</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">59.9%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Q1 non appariées (perdues au Q2)</td>
+<td style="text-align: left;">69</td>
+<td style="text-align: left;">40.1%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-flowchart" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-flowchart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="analyse_intervention_files/figure-html/fig-flowchart-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-flowchart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Diagramme de flux simplifié
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : Même interprétaion que le camembert précédent. Des patientes qui ont répondu au 2ème questionnaire, 103/106 réponses ont été appariées (soit 97.2%).</p>
+</section>
+<section id="attrition-selon-lâge-q1-appariées-vs-q1-non-appariées" class="level3" data-number="3.5">
+<h3 data-number="3.5" class="anchored" data-anchor-id="attrition-selon-lâge-q1-appariées-vs-q1-non-appariées"><span class="header-section-number">3.5</span> Attrition selon l’âge (Q1 appariées vs Q1 non appariées)</h3>
+<p>= Y a-t-il plus de pertes au suivi (Q2 manquant) dans certaines tranches d’âge ?</p>
+<ul>
+<li><p>Via un test du chi2 d’indépendance entre la tranche d’âge et le statut d’appariement (Q1 avec ou sans Q2) : p-value &gt; 0.9 donc pas d’impact évident de l’âge sur l’attrition.</p></li>
+<li><p>Visuellement : pas d’impact de l’âge sur l’attrition non plus.</p></li>
+</ul>
+<p><strong>Graphique pas obligatoire</strong> : en gros y a pas de différence des “perdus de vue” selon l’âge.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Même graphique mais avec les effectifs en ordonnées :</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="résultats-principaux" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="résultats-principaux"><span class="header-section-number">4</span> Résultats principaux</h2>
+<section id="résultats-clés-lecture-rapide" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="résultats-clés-lecture-rapide"><span class="header-section-number">4.1</span> Résultats clés (lecture rapide)</h3>
+<div class="cell">
+<div id="tbl-key-results-gt" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-key-results-gt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1
+</figcaption>
+<div aria-describedby="tbl-key-results-gt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="jnyumfncju" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jnyumfncju table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#jnyumfncju thead, #jnyumfncju tbody, #jnyumfncju tfoot, #jnyumfncju tr, #jnyumfncju td, #jnyumfncju th {
+  border-style: none;
+}
+
+#jnyumfncju p {
+  margin: 0;
+  padding: 0;
+}
+
+#jnyumfncju .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#jnyumfncju .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#jnyumfncju .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#jnyumfncju .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#jnyumfncju .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#jnyumfncju .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jnyumfncju .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#jnyumfncju .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#jnyumfncju .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#jnyumfncju .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#jnyumfncju .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#jnyumfncju .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#jnyumfncju .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#jnyumfncju .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#jnyumfncju .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#jnyumfncju .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#jnyumfncju .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#jnyumfncju .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#jnyumfncju .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jnyumfncju .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#jnyumfncju .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#jnyumfncju .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#jnyumfncju .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jnyumfncju .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#jnyumfncju .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#jnyumfncju .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jnyumfncju .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jnyumfncju .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#jnyumfncju .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jnyumfncju .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#jnyumfncju .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jnyumfncju .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#jnyumfncju .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jnyumfncju .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#jnyumfncju .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jnyumfncju .gt_left {
+  text-align: left;
+}
+
+#jnyumfncju .gt_center {
+  text-align: center;
+}
+
+#jnyumfncju .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#jnyumfncju .gt_font_normal {
+  font-weight: normal;
+}
+
+#jnyumfncju .gt_font_bold {
+  font-weight: bold;
+}
+
+#jnyumfncju .gt_font_italic {
+  font-style: italic;
+}
+
+#jnyumfncju .gt_super {
+  font-size: 65%;
+}
+
+#jnyumfncju .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#jnyumfncju .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#jnyumfncju .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#jnyumfncju .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#jnyumfncju .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#jnyumfncju .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#jnyumfncju .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#jnyumfncju .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#jnyumfncju div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table do-not-create-environment caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<td colspan="5" class="gt_heading gt_title gt_font_normal">Synthèse des résultats clés</td>
+</tr>
+<tr class="gt_heading even">
+<td colspan="5" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Sur <strong>103</strong> participantes appariées</td>
+</tr>
+<tr class="gt_col_headings header">
+<th id="n-(paires)" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">n (paires)</th>
+<th id="Moyenne-Q1-(/20)" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Moyenne Q1 (/20)</th>
+<th id="Moyenne-Q2-(/20)" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Moyenne Q2 (/20)</th>
+<th id="Gain-moyen-(Q2−Q1)" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Gain moyen (Q2−Q1)</th>
+<th id="Proportion-gain->=-3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Proportion gain &gt;= 3</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="n (paires)">103</td>
+<td class="gt_row gt_center" headers="Moyenne Q1 (/20)">15.3</td>
+<td class="gt_row gt_center" headers="Moyenne Q2 (/20)">18.2</td>
+<td class="gt_row gt_center" headers="Gain moyen (Q2−Q1)">3.0</td>
+<td class="gt_row gt_center" headers="Proportion gain >= 3">48.5%</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>Le gain moyen entre les groupes Q1 et Q2 (appariées) est à 2,97 points, et la proportion de participantes avec un gain &gt;= 3 points est de 48.5%.</p>
+</section>
+<section id="appariement-et-population-analysée" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="appariement-et-population-analysée"><span class="header-section-number">4.2</span> Appariement et population analysée</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Principaux résultats en langage simple (échantillon apparié, n = 103)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p><strong>L’information a-t-elle amélioré les connaissances ?</strong><br>
+<strong>Oui.</strong> En moyenne, les participantes ont gagné <strong>2,97 points</strong> sur 20 après information. Cette amélioration est <strong>statistiquement significatif</strong> (t-test apparié unilatéral : p = &lt; 1e-4), ce qui veut dire qu’il est très improbable qu’elle soit due au hasard.</p></li>
+<li><p><strong>L’amélioration est-elle “cliniquement pertinente” (gain d’au moins 3 points) ?</strong><br>
+<strong>En moyenne : presque.</strong> Le gain moyen est de <strong>2,97</strong> points, donc <strong>très proche</strong> du seuil de 3 points. L’IC95% bilatéral du gain moyen est <strong>[2,13 ; 3,81]</strong>, ce qui est compatible avec un gain moyen autour de 3. En revanche, <strong>48.5%</strong> des participantes ont atteint ou dépassé <strong>3 points</strong> de gain.</p></li>
+<li><p><strong>Pourquoi le gain moyen n’est-il pas plus élevé ?</strong><br>
+Principalement à cause d’un <strong>effet plafond</strong> : le score de départ était déjà élevé (moyenne Q1 = <strong>15,26/20</strong>). Quand on part déjà haut, il est mathématiquement plus difficile de gagner beaucoup de points.</p></li>
+<li><p><strong>Y a-t-il des différences selon l’âge ?</strong><br>
+<strong>Non, pas de manière évidente.</strong> La comparaison des gains selon les tranches d’âge est non statistiquement significatif (Kruskal–Wallis : p = 0.3518).</p></li>
+</ol>
+<p><strong>Conclusion simple :</strong> l’information améliore les connaissances en moyenne ; le gain moyen est très proche de 3 points, et le niveau initial déjà élevé limite la marge de progression.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 4%">
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Analyse</th>
+<th style="text-align: left;">n</th>
+<th style="text-align: left;">Gain moyen</th>
+<th style="text-align: left;">IC95% gain</th>
+<th style="text-align: left;">p t-test (bilatéral)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Principale (toutes paires)</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">2.97</td>
+<td style="text-align: left;">[2.13 ; 3.81]</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sensibilité (sans discordance)</td>
+<td style="text-align: left;">102</td>
+<td style="text-align: left;">2.92</td>
+<td style="text-align: left;">[2.08 ; 3.76]</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="impact-global-sur-le-score" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="impact-global-sur-le-score"><span class="header-section-number">4.3</span> Impact global sur le score</h3>
+<section id="résumé-visuel-des-résultats-clés" class="level4" data-number="4.3.1">
+<h4 data-number="4.3.1" class="anchored" data-anchor-id="résumé-visuel-des-résultats-clés"><span class="header-section-number">4.3.1</span> Résumé visuel des résultats clés</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/plot_key_summary_card-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="données-longues-pour-graphiques" class="level4" data-number="4.3.2">
+<h4 data-number="4.3.2" class="anchored" data-anchor-id="données-longues-pour-graphiques"><span class="header-section-number">4.3.2</span> Données longues (pour graphiques)</h4>
+</section>
+</section>
+<section id="comparaison-des-moyennes-table" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="comparaison-des-moyennes-table"><span class="header-section-number">4.4</span> Comparaison des moyennes (table)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fequsdssrr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fequsdssrr table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#fequsdssrr thead, #fequsdssrr tbody, #fequsdssrr tfoot, #fequsdssrr tr, #fequsdssrr td, #fequsdssrr th {
+  border-style: none;
+}
+
+#fequsdssrr p {
+  margin: 0;
+  padding: 0;
+}
+
+#fequsdssrr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#fequsdssrr .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#fequsdssrr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#fequsdssrr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#fequsdssrr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#fequsdssrr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fequsdssrr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#fequsdssrr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#fequsdssrr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#fequsdssrr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#fequsdssrr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#fequsdssrr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#fequsdssrr .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#fequsdssrr .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#fequsdssrr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#fequsdssrr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#fequsdssrr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#fequsdssrr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#fequsdssrr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fequsdssrr .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#fequsdssrr .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#fequsdssrr .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#fequsdssrr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fequsdssrr .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#fequsdssrr .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#fequsdssrr .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fequsdssrr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fequsdssrr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#fequsdssrr .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fequsdssrr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#fequsdssrr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fequsdssrr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#fequsdssrr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fequsdssrr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#fequsdssrr .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fequsdssrr .gt_left {
+  text-align: left;
+}
+
+#fequsdssrr .gt_center {
+  text-align: center;
+}
+
+#fequsdssrr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#fequsdssrr .gt_font_normal {
+  font-weight: normal;
+}
+
+#fequsdssrr .gt_font_bold {
+  font-weight: bold;
+}
+
+#fequsdssrr .gt_font_italic {
+  font-style: italic;
+}
+
+#fequsdssrr .gt_super {
+  font-size: 65%;
+}
+
+#fequsdssrr .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#fequsdssrr .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#fequsdssrr .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#fequsdssrr .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#fequsdssrr .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#fequsdssrr .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#fequsdssrr .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#fequsdssrr .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#fequsdssrr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Mesure</strong></th>
+<th id="stat_0" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Participants appariés</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">score_pre</td>
+<td class="gt_row gt_center" headers="stat_0">15.26 ± 3.77</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">score_post</td>
+<td class="gt_row gt_center" headers="stat_0">18.22 ± 2.05</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">score_diff</td>
+<td class="gt_row gt_center" headers="stat_0">2.97 ± 4.29</td>
+</tr>
+</tbody><tfoot>
+<tr class="gt_footnotes odd">
+<td colspan="2" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> Mean ± SD</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+<p>Interprétation (table des moyennes) : la ligne <code>score_diff</code> résume directement l’effet moyen de l’intervention (gain = Q2 - Q1). L’écart-type informe sur l’hétérogénéité des réponses individuelles.</p>
+</section>
+<section id="distribution-des-scores-initiaux-q1" class="level3" data-number="4.5">
+<h3 data-number="4.5" class="anchored" data-anchor-id="distribution-des-scores-initiaux-q1"><span class="header-section-number">4.5</span> Distribution des scores initiaux (Q1)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : cet histogramme décrit le niveau de connaissances initial global et permet d’apprécier la dispersion, ainsi qu’un éventuel effet plafond si de nombreux scores sont proches de 20.</p>
+<section id="boxplots-côte-à-côte-score-global" class="level4" data-number="4.5.1">
+<h4 data-number="4.5.1" class="anchored" data-anchor-id="boxplots-côte-à-côte-score-global"><span class="header-section-number">4.5.1</span> Boxplots côte à côte (score global)</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation (boxplots) : on observe un déplacement global vers des scores plus élevés après l’information. La médiane passe de 16 (Q1) à 18.5 (Q2), et l’intervalle interquartile se déplace dans le même sens.</p>
+</section>
+<section id="visualisation-des-trajectoires-individuelles" class="level4" data-number="4.5.2">
+<h4 data-number="4.5.2" class="anchored" data-anchor-id="visualisation-des-trajectoires-individuelles"><span class="header-section-number">4.5.2</span> Visualisation des trajectoires individuelles</h4>
+<p>Les graphiques suivants (diagrammes “spaghetti”, nuages de points, ou “waterfall”) ont tous pour but de dépasser l’analyse de la moyenne pour explorer la <strong>dynamique des changements individuels</strong>. Ils permettent de répondre à des questions comme : “La majorité des participantes a-t-elle progressé ?”, “Y a-t-il des personnes pour qui le score a baissé ?”, “Les gains sont-ils homogènes ou très variables ?”. Chaque graphique raconte la même histoire, mais sous un angle différent et complémentaire.</p>
+</section>
+<section id="diagramme-spaghetti-évolution-individuelle" class="level4" data-number="4.5.3">
+<h4 data-number="4.5.3" class="anchored" data-anchor-id="diagramme-spaghetti-évolution-individuelle"><span class="header-section-number">4.5.3</span> Diagramme spaghetti (évolution individuelle)</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation (spaghetti) : la majorité des trajectoires individuelles monte (gain &gt; 0 : 70 participantes), avec 19 baisses et 14 stabilités. La tendance moyenne est à l’augmentation entre Q1 et Q2.</p>
+<p>Ce graphique raconte aussi l’histoire de chaque participante. Chaque ligne grise fine représente la trajectoire d’une personne, et la ligne noire épaisse la <strong>tendance moyenne</strong> du groupe. On voit que la grande majorité des lignes <strong>montent</strong>, ce qui suggère un effet positif global de l’intervention, qui va maintenant être formalisé par les tests statistiques.</p>
+</section>
+<section id="diagramme-spaghetti-coloré-par-direction-du-gain" class="level4" data-number="4.5.4">
+<h4 data-number="4.5.4" class="anchored" data-anchor-id="diagramme-spaghetti-coloré-par-direction-du-gain"><span class="header-section-number">4.5.4</span> Diagramme spaghetti coloré (par direction du gain)</h4>
+<p>Ce graphique reprend le diagramme spaghetti ci-dessus, mais chaque trajectoire est colorée selon la direction du changement : vert pour les améliorations, rouge pour les diminutions, gris pour les stabilités.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/plot_spaghetti_colored-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="nuage-de-points-q1-vs-q2-appariés" class="level4" data-number="4.5.5">
+<h4 data-number="4.5.5" class="anchored" data-anchor-id="nuage-de-points-q1-vs-q2-appariés"><span class="header-section-number">4.5.5</span> Nuage de points Q1 vs Q2 (appariés)</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : ce graphique visualise directement l’évolution individuelle. Si la majorité des points est au-dessus de la diagonale, l’amélioration est majoritaire.</p>
+</section>
+<section id="waterfall-plot-des-gains-q2-q1" class="level4" data-number="4.5.6">
+<h4 data-number="4.5.6" class="anchored" data-anchor-id="waterfall-plot-des-gains-q2-q1"><span class="header-section-number">4.5.6</span> Waterfall plot des gains (Q2 − Q1)</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : ce graphique montre l’ampleur et la variabilité des gains. On visualise aussi la proportion de participantes dépassant le seuil de 3 points.</p>
+</section>
+<section id="gain-en-fonction-du-score-initial-effet-plafond" class="level4" data-number="4.5.7">
+<h4 data-number="4.5.7" class="anchored" data-anchor-id="gain-en-fonction-du-score-initial-effet-plafond"><span class="header-section-number">4.5.7</span> Gain en fonction du score initial (effet plafond)</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : si la courbe diminue quand le score initial augmente, cela illustre l’effet plafond (moins de marge pour progresser quand on est déjà proche de 20/20).</p>
+</section>
+<section id="analyse-et-interprétation-avantaprès" class="level4" data-number="4.5.8">
+<h4 data-number="4.5.8" class="anchored" data-anchor-id="analyse-et-interprétation-avantaprès"><span class="header-section-number">4.5.8</span> Analyse et interprétation (avant/après)</h4>
+<p>Sur les participantes appariées (<span class="math inline">\(n = 103\)</span>), le score moyen passe de <strong>15.26</strong> (avant) à <strong>18.22</strong> (après), soit un gain moyen de <strong>2.97</strong> points.</p>
+<p>Pourquoi on compare Q2 à la moyenne Q1 <em>appariée</em> (et pas à la moyenne Q1 “totale”) :</p>
+<ul>
+<li>Pour mesurer un effet “avant/après”, il faut comparer <strong>les mêmes personnes</strong> au temps 1 et au temps 2.</li>
+<li>La moyenne Q2 est calculée uniquement chez les participantes qui ont un Q2 (donc les <strong>appariées</strong>).</li>
+<li>Si on compare la moyenne Q2 (appariées) à la moyenne Q1 “totale” (appariées + non appariées), on compare en réalité <strong>deux groupes différents</strong>. La différence mélange alors l’effet potentiel de l’information avec un <strong>biais de sélection</strong> (par exemple : les participantes qui répondent au Q2 peuvent être, au départ, plus informées ou plus motivées).</li>
+<li>Dans ces données, cela se voit : la moyenne Q1 avant appariement (<strong>13,88/20</strong>) est différente de la moyenne Q1 chez les appariées (<strong>15,26/20</strong>). Utiliser la moyenne Q1 “totale” pour estimer le gain donnerait donc un gain artificiellement plus grand, qui ne correspond pas à une comparaison avant/après sur les mêmes personnes.</li>
+<li>On pourrait aussi être tenté d’utiliser la moyenne Q2 “totale” (toutes les répondantes au Q2, <strong>18,19/20</strong> sur 106 réponses, min = 4,50, max = 20,00), mais cela ne règle pas le problème : le calcul d’un gain nécessite de disposer de Q1 et Q2 <strong>pour la même personne</strong>.</li>
+</ul>
+<p>Avec un seuil de pertinence clinique fixé à <strong>3 points</strong>, le gain moyen est <strong>très légèrement en dessous</strong> de ce seuil (gain moyen = 2.97, IC95% bilatéral = [2.13 ; 3.81]).</p>
+</section>
+<section id="test-statistique-test-t-apparié-student" class="level4" data-number="4.5.9">
+<h4 data-number="4.5.9" class="anchored" data-anchor-id="test-statistique-test-t-apparié-student"><span class="header-section-number">4.5.9</span> Test statistique (test t apparié / Student)</h4>
+<p>Le test principal ci-dessous est un <strong>test t apparié</strong> (Student) qui compare la moyenne des différences à 0 (après - avant). Par défaut, le test est unilatéral (après &gt; avant).</p>
+<p>On teste l’hypothèse d’une amélioration des scores après information.</p>
+<p>Interprétation (t-test apparié, données observées) : le gain moyen est de 2.97 points. Le test t apparié est statistiquement significatif (p = &lt; 1e-4), en faveur d’une <strong>augmentation</strong> après intervention.</p>
+<p>Interprétation (IC95% du gain moyen) : l’IC95% bilatéral du gain moyen est [2.13, 3.81] points.</p>
+</section>
+<section id="tableau-de-synthèse-analyse-principale" class="level4" data-number="4.5.10">
+<h4 data-number="4.5.10" class="anchored" data-anchor-id="tableau-de-synthèse-analyse-principale"><span class="header-section-number">4.5.10</span> Tableau de synthèse (analyse principale)</h4>
+<p>Ce tableau résume les résultats principaux sur l’échantillon apparié. Les tests sont rapportés en <strong>bilatéral</strong> (lecture standard) et en <strong>unilatéral</strong> (après &gt; avant, cohérent avec l’hypothèse attendue).</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 14%">
+<col style="width: 17%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">n (paires)</th>
+<th style="text-align: left;">Moyenne Q1 (/20)</th>
+<th style="text-align: left;">Moyenne Q2 (/20)</th>
+<th style="text-align: left;">Gain moyen (Q2−Q1)</th>
+<th style="text-align: left;">IC95% gain (bilatéral)</th>
+<th style="text-align: left;">p t-test (bilatéral)</th>
+<th style="text-align: left;">p t-test (unilatéral)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">15.26</td>
+<td style="text-align: left;">18.22</td>
+<td style="text-align: left;">2.97</td>
+<td style="text-align: left;">[2.13 ; 3.81]</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 12%">
+<col style="width: 15%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">n (paires)</th>
+<th style="text-align: left;">Q1 (moyenne ± SD)</th>
+<th style="text-align: left;">Q2 (moyenne ± SD)</th>
+<th style="text-align: left;">Gain moyen</th>
+<th style="text-align: left;">IC95% gain</th>
+<th style="text-align: left;">p t-test (bilat.)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">15.26 ± 3.77</td>
+<td style="text-align: left;">18.22 ± 2.05</td>
+<td style="text-align: left;">2.97</td>
+<td style="text-align: left;">[2.13 ; 3.81]</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="taille-deffet-d-de-cohen" class="level4" data-number="4.5.11">
+<h4 data-number="4.5.11" class="anchored" data-anchor-id="taille-deffet-d-de-cohen"><span class="header-section-number">4.5.11</span> Taille d’effet : d de Cohen</h4>
+<div class="callout callout-style-default callout-note callout-titled" title="Qu'est-ce que le d de Cohen ?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Qu’est-ce que le d de Cohen ?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Le <strong>d de Cohen</strong> est un indicateur de <strong>taille d’effet</strong> qui quantifie l’ampleur d’une différence entre deux mesures, <strong>indépendamment de la taille de l’échantillon</strong>. Contrairement à la p-value (qui dit seulement si l’effet est “probablement réel”), le d de Cohen dit <strong>à quel point l’effet est grand</strong>.</p>
+<p><strong>Calcul :</strong> pour des données appariées, <span class="math inline">\(d = \frac{\bar{x}_{\text{gain}}}{\text{SD}_{\text{gain}}}\)</span>, c’est-à-dire le gain moyen divisé par l’écart-type des gains.</p>
+<p><strong>Interprétation (conventions de Cohen, 1988) :</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>d</th>
+<th>Interprétation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>&lt; 0,2</td>
+<td>Effet négligeable</td>
+</tr>
+<tr class="even">
+<td>0,2 – 0,5</td>
+<td>Effet <strong>petit</strong></td>
+</tr>
+<tr class="odd">
+<td>0,5 – 0,8</td>
+<td>Effet <strong>moyen</strong></td>
+</tr>
+<tr class="even">
+<td>&gt; 0,8</td>
+<td>Effet <strong>grand</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Ces seuils sont des repères conventionnels ; l’interprétation doit toujours tenir compte du contexte (ici, un QCM de connaissances avec effet plafond).</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">d de Cohen</th>
+<th style="text-align: left;">IC95%</th>
+<th style="text-align: left;">Interprétation</th>
+<th style="text-align: left;">Gain moyen</th>
+<th style="text-align: left;">SD du gain</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0.691</td>
+<td style="text-align: left;">[0.476 ; 0.906]</td>
+<td style="text-align: left;">Effet moyen</td>
+<td style="text-align: left;">2.97</td>
+<td style="text-align: left;">4.29</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Interprétation : le d de Cohen est de <strong>0.69</strong> (IC95% : [0.48 ; 0.91]), ce qui correspond à un effet <strong>moyen</strong> selon les conventions de Cohen. Cela signifie que le gain moyen représente environ <strong>0.69 écart-type</strong> de la variabilité interindividuelle des gains. Dans le contexte d’une intervention éducative sur les connaissances (avec un effet plafond notable), cet effet moyen est à interpréter en tenant compte du fait que les scores initiaux étaient déjà élevés, limitant mécaniquement la marge de progression.</p>
+</section>
+<section id="gain-relatif-de-la-marge-de-progression-possible" class="level4" data-number="4.5.12">
+<h4 data-number="4.5.12" class="anchored" data-anchor-id="gain-relatif-de-la-marge-de-progression-possible"><span class="header-section-number">4.5.12</span> Gain relatif (% de la marge de progression possible)</h4>
+<div class="callout callout-style-default callout-note callout-titled" title="Pourquoi le gain relatif ?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Pourquoi le gain relatif ?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Le gain brut (Q2 − Q1) ne tient pas compte de la <strong>marge de progression</strong> de chaque participante. Une personne à 18/20 ne peut gagner que 2 points au maximum, alors qu’une personne à 10/20 peut en gagner 10. Le <strong>gain relatif</strong> exprime le gain réel en pourcentage de la marge théoriquement disponible : <span class="math inline">\(\text{Gain relatif} = \frac{\text{Q2} - \text{Q1}}{20 - \text{Q1}} \times 100\)</span>. Cet indicateur neutralise l’effet plafond.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">n</th>
+<th style="text-align: left;">Gain relatif moyen</th>
+<th style="text-align: left;">Médiane</th>
+<th style="text-align: left;">IQR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">91</td>
+<td style="text-align: left;">34.9%</td>
+<td style="text-align: left;">75%</td>
+<td style="text-align: left;">[16.7% ; 94.7%]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/plot_relative_gain-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : en moyenne, les participantes ont comblé <strong>34.9%</strong> de leur marge de progression théorique (médiane : 75%). Ce chiffre est plus informatif que le gain brut car il tient compte du fait que les participantes avec un score initial élevé avaient mécaniquement moins de marge pour s’améliorer.</p>
+</section>
+<section id="distribution-des-gains-q2-q1" class="level4" data-number="4.5.13">
+<h4 data-number="4.5.13" class="anchored" data-anchor-id="distribution-des-gains-q2-q1"><span class="header-section-number">4.5.13</span> Distribution des gains (Q2 − Q1)</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/plot_gain_distribution-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : cette distribution aide à visualiser l’hétérogénéité des réponses individuelles (certaines participantes progressent beaucoup, d’autres peu, et quelques-unes diminuent). Les barres vertes (gains), grises (stabilité) et rouges (pertes) permettent de voir immédiatement la répartition. La ligne pleine indique la moyenne, la ligne pointillée verte le seuil clinique de 3 points.</p>
+</section>
+<section id="proportion-améliorée-stable-diminuée" class="level4" data-number="4.5.14">
+<h4 data-number="4.5.14" class="anchored" data-anchor-id="proportion-améliorée-stable-diminuée"><span class="header-section-number">4.5.14</span> Proportion améliorée / stable / diminuée</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">tendance</th>
+<th style="text-align: left;">n</th>
+<th style="text-align: left;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Diminution</td>
+<td style="text-align: left;">19</td>
+<td style="text-align: left;">18.4%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Stable</td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">13.6%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Amélioration</td>
+<td style="text-align: left;">70</td>
+<td style="text-align: left;">68.0%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : ce graphique répond à une question simple : “combien de participantes s’améliorent, restent stables ou diminuent ?” (sans tenir compte de l’ampleur).</p>
+</section>
+<section id="courbe-ecdf-des-gains-q2-q1" class="level4" data-number="4.5.15">
+<h4 data-number="4.5.15" class="anchored" data-anchor-id="courbe-ecdf-des-gains-q2-q1"><span class="header-section-number">4.5.15</span> Courbe ECDF des gains (Q2 − Q1)</h4>
+<p>La courbe ECDF montre, pour chaque valeur <em>x</em>, la proportion de participantes ayant un gain <strong>&lt;= x</strong>. On peut lire directement la proportion avec un gain &gt;= 3 en regardant ce qu’il reste au-dessus de x = 3.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="bootstrap-1000-repiquages-du-gain-moyen" class="level4" data-number="4.5.16">
+<h4 data-number="4.5.16" class="anchored" data-anchor-id="bootstrap-1000-repiquages-du-gain-moyen"><span class="header-section-number">4.5.16</span> Bootstrap (1000 repiquages) du gain moyen</h4>
+<p>Objectif : estimer l’incertitude du <strong>gain moyen</strong> sans s’appuyer sur l’hypothèse de normalité (repiquage des participantes appariées).</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 25%">
+<col style="width: 28%">
+<col style="width: 19%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">n</th>
+<th style="text-align: left;">B (réplications)</th>
+<th style="text-align: left;">Gain moyen observé</th>
+<th style="text-align: left;">IC95% (2,5%)</th>
+<th style="text-align: left;">IC95% (97,5%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">2.97</td>
+<td style="text-align: left;">2.16</td>
+<td style="text-align: left;">3.74</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Interprétation (bootstrap, 1000 réplications) : l’IC95% bootstrap du gain moyen est <strong>[2.16, 3.74]</strong>. Cet intervalle est compatible avec un gain moyen &gt; 0 et montre que le gain moyen est plutôt autour de 2–3 points.</p>
+</section>
+<section id="densités-avant-bootstrap-et-densités-des-moyennes-bootstrap" class="level4" data-number="4.5.17">
+<h4 data-number="4.5.17" class="anchored" data-anchor-id="densités-avant-bootstrap-et-densités-des-moyennes-bootstrap"><span class="header-section-number">4.5.17</span> Densités (avant bootstrap) et densités des moyennes (bootstrap)</h4>
+<p>Le premier graphique représente la distribution des <strong>scores individuels observés</strong>. Le second représente la distribution bootstrap des <strong>moyennes</strong> (après 1000 repiquages). La ligne verticale pointillée correspond à la moyenne observée.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-29-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation (densités observées) : la densité “Après (Q2)” est globalement décalée vers la droite par rapport à “Avant (Q1)”, ce qui est cohérent avec un gain global. Le recouvrement entre courbes reflète l’hétérogénéité interindividuelle.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation (densités bootstrap des moyennes) : ces courbes décrivent l’incertitude sur la <strong>moyenne</strong> de Q1 et Q2. Si la moyenne bootstrap de Q2 est nettement au-dessus de celle de Q1, l’amélioration moyenne est robuste aux hypothèses de normalité.</p>
+</section>
+<section id="résumé-des-gains" class="level4" data-number="4.5.18">
+<h4 data-number="4.5.18" class="anchored" data-anchor-id="résumé-des-gains"><span class="header-section-number">4.5.18</span> Résumé des gains</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 13%">
+<col style="width: 10%">
+<col style="width: 17%">
+<col style="width: 12%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">n</th>
+<th style="text-align: left;">Moy. Q1</th>
+<th style="text-align: left;">Moy. Q2</th>
+<th style="text-align: left;">Gain moy.</th>
+<th style="text-align: left;">SD gain</th>
+<th style="text-align: left;">Médiane gain</th>
+<th style="text-align: left;">IQR gain</th>
+<th style="text-align: left;">% améliorées</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">15.26</td>
+<td style="text-align: left;">18.22</td>
+<td style="text-align: left;">2.97</td>
+<td style="text-align: left;">4.29</td>
+<td style="text-align: left;">2.5</td>
+<td style="text-align: left;">5.25</td>
+<td style="text-align: left;">81.6%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="pertinence-clinique-proportion-avec-gain-3-points" class="level4" data-number="4.5.19">
+<h4 data-number="4.5.19" class="anchored" data-anchor-id="pertinence-clinique-proportion-avec-gain-3-points"><span class="header-section-number">4.5.19</span> Pertinence clinique : proportion avec gain &gt;= 3 points</h4>
+<p>Interprétation (proportion avec gain &gt;= 3) : 50/103 participantes (48.5%) atteignent au moins 3 points. IC95% de cette proportion : [0.386, 0.586].</p>
+<p>Note : la sortie <code>binom.test</code> affiche aussi une p-value (test contre une proportion de 0,5 par défaut). Ici, cette p-value n’est <strong>pas</strong> l’objectif principal ; l’intérêt est surtout l’<strong>estimation</strong> de la proportion et son <strong>IC95%</strong>.</p>
+</section>
+<section id="probabilité-dun-gain-3-points-selon-le-score-initial" class="level4" data-number="4.5.20">
+<h4 data-number="4.5.20" class="anchored" data-anchor-id="probabilité-dun-gain-3-points-selon-le-score-initial"><span class="header-section-number">4.5.20</span> Probabilité d’un gain &gt;= 3 points selon le score initial</h4>
+<div class="callout callout-style-default callout-note callout-titled" title="Objectif de cette analyse">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Objectif de cette analyse
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cette section vise à quantifier l’<strong>effet plafond</strong>. On s’attend à ce qu’il soit plus difficile d’obtenir un gros gain (&gt;= 3 points) si le score de départ est déjà élevé. Le modèle de régression logistique estime la <strong>probabilité</strong> que cela arrive, en fonction du score de départ. Le graphique qui suit est la visualisation de cette probabilité.</p>
+</div>
+</div>
+<p>Objectif : estimer, à partir des données, la <strong>probabilité</strong> d’obtenir un gain d’au moins 3 points (Q2 − Q1 &gt;= 3) en fonction du score initial, puis donner une estimation <strong>pour un score initial égal à la moyenne observée au Q1 dans l’échantillon apparié</strong> (15,26/20).</p>
+<p>Explication simple : on définit “répondeur” = 1 si la participante gagne au moins 3 points, sinon 0. On ajuste ensuite une régression logistique pour relier la probabilité d’être répondeur au <strong>score initial</strong>. Le modèle sert à résumer la tendance globale (une courbe) et à lire la probabilité pour un score initial donné.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 41%">
+<col style="width: 12%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Score initial (Q1, /20)</th>
+<th style="text-align: left;">Probabilité estimée (gain &gt;= 3)</th>
+<th style="text-align: left;">IC95% bas</th>
+<th style="text-align: left;">IC95% haut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">15.26</td>
+<td style="text-align: left;">64.1%</td>
+<td style="text-align: left;">46.6%</td>
+<td style="text-align: left;">78.5%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Analyse complémentaire (exploratoire) : on ajuste aussi un modèle “complet” (score initial + âge + langue) et un modèle “âge seul” (score initial + âge) pour vérifier si l’âge et/ou la langue apportent une information supplémentaire sur la probabilité d’un gain &gt;= 3 points, à score initial comparable.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 15%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">OR</th>
+<th style="text-align: left;">IC95% bas</th>
+<th style="text-align: left;">IC95% haut</th>
+<th style="text-align: left;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Score initial (Q1) (par +1 point)</td>
+<td style="text-align: left;">0.3352401</td>
+<td style="text-align: left;">0.2131620</td>
+<td style="text-align: left;">0.5272324</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Âge (par +1 an)</td>
+<td style="text-align: left;">1.0399252</td>
+<td style="text-align: left;">0.9664946</td>
+<td style="text-align: left;">1.1189347</td>
+<td style="text-align: left;">0.2947</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Langue: Créole (vs Français)</td>
+<td style="text-align: left;">0.4732596</td>
+<td style="text-align: left;">0.0618763</td>
+<td style="text-align: left;">3.6197183</td>
+<td style="text-align: left;">0.4711</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Interprétation (modèle complet) : dans ces données, on n’observe <strong>pas d’effet clair de l’âge</strong> ni de la <strong>langue du questionnaire</strong> (IC95% des OR recouvrant 1 et p &gt; 0,05). En revanche, le <strong>score initial</strong> est fortement associé à la probabilité d’un gain &gt;= 3 : plus le score de départ est élevé, plus la probabilité d’un “gros gain” diminue (effet plafond). Concrètement, l’OR associé au score initial est d’environ <strong>0.34</strong> par +1 point : cela correspond à une baisse d’environ <strong>66%</strong> des “chances” (odds) d’atteindre un gain &gt;= 3 pour chaque point supplémentaire au score initial.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 15%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">OR</th>
+<th style="text-align: left;">IC95% bas</th>
+<th style="text-align: left;">IC95% haut</th>
+<th style="text-align: left;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Score initial (Q1) (par +1 point)</td>
+<td style="text-align: left;">0.3371868</td>
+<td style="text-align: left;">0.2140457</td>
+<td style="text-align: left;">0.5311713</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Âge (par +1 an)</td>
+<td style="text-align: left;">1.0379970</td>
+<td style="text-align: left;">0.9646531</td>
+<td style="text-align: left;">1.1169174</td>
+<td style="text-align: left;">0.3185</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Interprétation (modèle âge seul) : ce modèle permet d’évaluer l’association entre l’âge et la probabilité d’un gain &gt;= 3, sans tenir compte de la langue. Si l’effet de l’âge est proche de 1 et non significatif, cela suggère une faible influence de l’âge dans ces données.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-36-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : globalement, la courbe est décroissante : quand le score initial augmente, la probabilité d’obtenir un gain &gt;= 3 diminue (effet plafond). Pour un score initial égal à la <strong>moyenne du Q1 dans l’échantillon apparié</strong> (<strong>15,26/20</strong>), la probabilité estimée est d’environ <strong>64.1%</strong> (IC95% : <strong>[46.6%, 78.5%]</strong>).</p>
+</section>
+<section id="test-de-signe-proportion-de-paires-améliorées" class="level4" data-number="4.5.21">
+<h4 data-number="4.5.21" class="anchored" data-anchor-id="test-de-signe-proportion-de-paires-améliorées"><span class="header-section-number">4.5.21</span> Test de signe (proportion de paires améliorées)</h4>
+<p>Le test de signe compare le nombre de paires où le score augmente vs diminue (les égalités sont ignorées).</p>
+<p>Interprétation (test de signe) : test statistiquement significatif (p = &lt; 1e-4). Cela indique que les améliorations (gain &gt; 0) sont plus fréquentes que les diminutions (gain &lt; 0), indépendamment de l’amplitude des variations.</p>
+</section>
+</section>
+<section id="exploration-gain-global-selon-lâge" class="level3" data-number="4.6">
+<h3 data-number="4.6" class="anchored" data-anchor-id="exploration-gain-global-selon-lâge"><span class="header-section-number">4.6</span> Exploration : gain global selon l’âge</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="yvciucurfn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#yvciucurfn table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#yvciucurfn thead, #yvciucurfn tbody, #yvciucurfn tfoot, #yvciucurfn tr, #yvciucurfn td, #yvciucurfn th {
+  border-style: none;
+}
+
+#yvciucurfn p {
+  margin: 0;
+  padding: 0;
+}
+
+#yvciucurfn .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#yvciucurfn .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#yvciucurfn .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#yvciucurfn .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#yvciucurfn .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#yvciucurfn .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yvciucurfn .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#yvciucurfn .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#yvciucurfn .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#yvciucurfn .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#yvciucurfn .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#yvciucurfn .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#yvciucurfn .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#yvciucurfn .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#yvciucurfn .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#yvciucurfn .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#yvciucurfn .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#yvciucurfn .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#yvciucurfn .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yvciucurfn .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#yvciucurfn .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#yvciucurfn .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#yvciucurfn .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yvciucurfn .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#yvciucurfn .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#yvciucurfn .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yvciucurfn .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yvciucurfn .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#yvciucurfn .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yvciucurfn .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#yvciucurfn .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yvciucurfn .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#yvciucurfn .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yvciucurfn .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#yvciucurfn .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yvciucurfn .gt_left {
+  text-align: left;
+}
+
+#yvciucurfn .gt_center {
+  text-align: center;
+}
+
+#yvciucurfn .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#yvciucurfn .gt_font_normal {
+  font-weight: normal;
+}
+
+#yvciucurfn .gt_font_bold {
+  font-weight: bold;
+}
+
+#yvciucurfn .gt_font_italic {
+  font-style: italic;
+}
+
+#yvciucurfn .gt_super {
+  font-size: 65%;
+}
+
+#yvciucurfn .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#yvciucurfn .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#yvciucurfn .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#yvciucurfn .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#yvciucurfn .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#yvciucurfn .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#yvciucurfn .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#yvciucurfn .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#yvciucurfn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="gt_col_headings header">
+<th id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="n" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>N</strong></th>
+<th id="stat_1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Moins de 18 ans</strong><br>
+N = 1<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Entre 18 et 24 ans</strong><br>
+N = 25<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Entre 25 et 29 ans</strong><br>
+N = 22<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_4" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Entre 30 et 34 ans</strong><br>
+N = 23<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_5" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Entre 35 et 39 ans</strong><br>
+N = 17<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_6" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Entre 40 et 44 ans</strong><br>
+N = 4<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_7" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Entre 45 et 49 ans</strong><br>
+N = 8<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_8" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>50 ans et plus</strong><br>
+N = 3<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="stat_9" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Inconnu</strong><br>
+N = 0<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">score_pre</td>
+<td class="gt_row gt_center" headers="n">103</td>
+<td class="gt_row gt_center" headers="stat_1">14.00 ± NA</td>
+<td class="gt_row gt_center" headers="stat_2">15.60 ± 3.80</td>
+<td class="gt_row gt_center" headers="stat_3">14.84 ± 3.73</td>
+<td class="gt_row gt_center" headers="stat_4">16.61 ± 2.54</td>
+<td class="gt_row gt_center" headers="stat_5">14.94 ± 4.02</td>
+<td class="gt_row gt_center" headers="stat_6">13.63 ± 4.66</td>
+<td class="gt_row gt_center" headers="stat_7">14.06 ± 3.28</td>
+<td class="gt_row gt_center" headers="stat_8">12.67 ± 9.45</td>
+<td class="gt_row gt_center" headers="stat_9">NA ± NA</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">score_post</td>
+<td class="gt_row gt_center" headers="n">103</td>
+<td class="gt_row gt_center" headers="stat_1">18.50 ± NA</td>
+<td class="gt_row gt_center" headers="stat_2">18.54 ± 1.22</td>
+<td class="gt_row gt_center" headers="stat_3">18.23 ± 1.53</td>
+<td class="gt_row gt_center" headers="stat_4">17.87 ± 2.04</td>
+<td class="gt_row gt_center" headers="stat_5">18.97 ± 1.27</td>
+<td class="gt_row gt_center" headers="stat_6">14.75 ± 6.96</td>
+<td class="gt_row gt_center" headers="stat_7">18.19 ± 1.51</td>
+<td class="gt_row gt_center" headers="stat_8">18.67 ± 0.58</td>
+<td class="gt_row gt_center" headers="stat_9">NA ± NA</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">score_diff</td>
+<td class="gt_row gt_center" headers="n">103</td>
+<td class="gt_row gt_center" headers="stat_1">4.50 ± NA</td>
+<td class="gt_row gt_center" headers="stat_2">2.94 ± 4.01</td>
+<td class="gt_row gt_center" headers="stat_3">3.39 ± 3.88</td>
+<td class="gt_row gt_center" headers="stat_4">1.26 ± 2.72</td>
+<td class="gt_row gt_center" headers="stat_5">4.03 ± 3.94</td>
+<td class="gt_row gt_center" headers="stat_6">1.13 ± 10.36</td>
+<td class="gt_row gt_center" headers="stat_7">4.13 ± 3.92</td>
+<td class="gt_row gt_center" headers="stat_8">6.00 ± 9.85</td>
+<td class="gt_row gt_center" headers="stat_9">NA ± NA</td>
+</tr>
+</tbody><tfoot>
+<tr class="gt_footnotes odd">
+<td colspan="11" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> Mean ± SD</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+<p>Interprétation (stratifié par âge) : ces moyennes (± SD) permettent de comparer le niveau initial, le niveau après intervention et le gain moyen selon la tranche d’âge, avant de formaliser la comparaison par tests.</p>
+<section id="répondeurs-gain-3-selon-lâge-exploratoire" class="level4" data-number="4.6.1">
+<h4 data-number="4.6.1" class="anchored" data-anchor-id="répondeurs-gain-3-selon-lâge-exploratoire"><span class="header-section-number">4.6.1</span> Répondeurs (gain &gt;= 3) selon l’âge (exploratoire)</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Âge</th>
+<th style="text-align: left;">n</th>
+<th style="text-align: left;">Répondeurs (gain &gt;= 3)</th>
+<th style="text-align: left;">IC95%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Moins de 18 ans</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1/1 (100.0%)</td>
+<td style="text-align: left;">[20.7% ; 100.0%]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Entre 18 et 24 ans</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">11/25 (44.0%)</td>
+<td style="text-align: left;">[26.7% ; 62.9%]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Entre 25 et 29 ans</td>
+<td style="text-align: left;">22</td>
+<td style="text-align: left;">11/22 (50.0%)</td>
+<td style="text-align: left;">[30.7% ; 69.3%]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Entre 30 et 34 ans</td>
+<td style="text-align: left;">23</td>
+<td style="text-align: left;">7/23 (30.4%)</td>
+<td style="text-align: left;">[15.6% ; 50.9%]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Entre 35 et 39 ans</td>
+<td style="text-align: left;">17</td>
+<td style="text-align: left;">10/17 (58.8%)</td>
+<td style="text-align: left;">[36.0% ; 78.4%]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Entre 40 et 44 ans</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3/4 (75.0%)</td>
+<td style="text-align: left;">[30.1% ; 95.4%]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Entre 45 et 49 ans</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">5/8 (62.5%)</td>
+<td style="text-align: left;">[30.6% ; 86.3%]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">50 ans et plus</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2/3 (66.7%)</td>
+<td style="text-align: left;">[20.8% ; 93.9%]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-40-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : ces proportions (avec IC95%) permettent de voir si un “gros gain” (&gt;= 3 points) semble plus fréquent dans certaines tranches d’âge. Résultat exploratoire.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-41-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation (gain vs âge) : ce boxplot compare la distribution des gains par tranche d’âge. Un écart de médiane ou une dispersion très différente suggère des sous-groupes répondant mieux ou moins bien à l’intervention.</p>
+</section>
+</section>
+<section id="score-initial-q1-selon-lâge" class="level3" data-number="4.7">
+<h3 data-number="4.7" class="anchored" data-anchor-id="score-initial-q1-selon-lâge"><span class="header-section-number">4.7</span> Score initial (Q1) selon l’âge</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-42-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation (score initial vs âge) : ce boxplot aide à repérer des niveaux de connaissance initiaux différents selon l’âge, ce qui peut influencer le gain possible (“marge de progression”).</p>
+<p>Interprétation (Kruskal–Wallis, score initial vs âge) : test non statistiquement significatif (p = 0.5373). Un résultat significatif suggère des distributions de score initial différentes selon la tranche d’âge.</p>
+<p>Interprétation (Kruskal–Wallis, gain vs âge) : test non statistiquement significatif (p = 0.3518). Un résultat significatif suggère une réponse à l’intervention hétérogène selon l’âge.</p>
+<p>Interprétation (modèle linéaire) : après ajustement sur le score initial, l’association globale avec l’âge est statistiquement significatif (p = &lt; 1e-4). Le score initial est statistiquement significatif (p = &lt; 1e-4), ce qui peut traduire un effet plafond (gain plus faible quand le score initial est déjà élevé).</p>
+</section>
+<section id="scores-initiaux-par-question-q1" class="level3" data-number="4.8">
+<h3 data-number="4.8" class="anchored" data-anchor-id="scores-initiaux-par-question-q1"><span class="header-section-number">4.8</span> Scores initiaux par question (Q1)</h3>
+<p><strong>Boire de l’alcool pendant la grossesse nuit au bébé ?</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-47-1.png" class="img-fluid" width="672"></p>
+<p><strong>L’alcool bu par la mère arrive jusqu’au bébé ?</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-47-2.png" class="img-fluid" width="672"></p>
+<p><strong>Conséquences possibles sur le bébé à naître</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-47-3.png" class="img-fluid" width="672"></p>
+<p><strong>Conséquences du SAF</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-47-4.png" class="img-fluid" width="672"></p>
+<p><strong>Âges possibles de détection des troubles</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-47-5.png" class="img-fluid" width="672"></p>
+<p><strong>Quantité d’alcool risquée pendant la grossesse</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-47-6.png" class="img-fluid" width="672"></p>
+<p><strong>Verre contenant le plus d’alcool</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-47-7.png" class="img-fluid" width="672"></p>
+<p><strong>Place de l’homme dans la prévention</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-47-8.png" class="img-fluid" width="672"></p>
+<p>Lorsque les réponses initiales sont bonnes (quasi 100% au score maximal), il existe un probable “effet plafond” de la question, limitant la marge de progression possible.</p>
+<p>Vue d’ensemble des 8 questions sur un seul graphique facetté :</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/plot_q1_facetted-1.png" class="img-fluid figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Représentons tous les scores sur un même graphique pour mieux visualiser les différences entre questions, avec un barème normalisé (0–100%).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/plot_q1_all_questions-1.png" class="img-fluid figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="analyse-par-question" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="analyse-par-question"><span class="header-section-number">5</span> Analyse par question</h2>
+<p>Cette section explore l’évolution <strong>par question</strong> (scores en points et en % du barème) à partir des scores par question déjà calculés plus haut.</p>
+<p>Important : ces analyses “par question” sont <strong>exploratoires</strong>. Il n’y a pas de correction pour tests multiples (demande explicite), donc on interprète surtout (i) la <strong>taille</strong> des gains (en points et en % du barème) et (ii) la cohérence avec l’effet plafond, plutôt qu’une liste stricte de p-values &lt; 0,05.</p>
+<section id="résultats-par-question" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="résultats-par-question"><span class="header-section-number">5.1</span> Résultats par question</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: left;">Max</th>
+<th style="text-align: left;">n</th>
+<th style="text-align: left;">Moy. Q1</th>
+<th style="text-align: left;">Moy. Q2</th>
+<th style="text-align: left;">Gain moy.</th>
+<th style="text-align: left;">% max Q1</th>
+<th style="text-align: left;">% max Q2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Boire de l’alcool pendant la grossesse nuit au bébé ?</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">4.90</td>
+<td style="text-align: left;">5.00</td>
+<td style="text-align: left;">0.10</td>
+<td style="text-align: left;">98.1%</td>
+<td style="text-align: left;">100.0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Conséquences du SAF</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">4.09</td>
+<td style="text-align: left;">4.58</td>
+<td style="text-align: left;">0.50</td>
+<td style="text-align: left;">64.1%</td>
+<td style="text-align: left;">75.7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Conséquences possibles sur le bébé à naître</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">4.66</td>
+<td style="text-align: left;">5.09</td>
+<td style="text-align: left;">0.43</td>
+<td style="text-align: left;">50.5%</td>
+<td style="text-align: left;">62.1%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">L’alcool bu par la mère arrive jusqu’au bébé ?</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">4.56</td>
+<td style="text-align: left;">4.95</td>
+<td style="text-align: left;">0.39</td>
+<td style="text-align: left;">91.3%</td>
+<td style="text-align: left;">99.0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Place de l’homme dans la prévention</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">2.60</td>
+<td style="text-align: left;">3.43</td>
+<td style="text-align: left;">0.83</td>
+<td style="text-align: left;">37.9%</td>
+<td style="text-align: left;">64.1%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Quantité d’alcool risquée pendant la grossesse</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">3.69</td>
+<td style="text-align: left;">4.85</td>
+<td style="text-align: left;">1.17</td>
+<td style="text-align: left;">73.8%</td>
+<td style="text-align: left;">97.1%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Verre contenant le plus d’alcool</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">3.93</td>
+<td style="text-align: left;">4.81</td>
+<td style="text-align: left;">0.87</td>
+<td style="text-align: left;">78.6%</td>
+<td style="text-align: left;">96.1%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Âges possibles de détection des troubles</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">2.08</td>
+<td style="text-align: left;">3.74</td>
+<td style="text-align: left;">1.66</td>
+<td style="text-align: left;">20.4%</td>
+<td style="text-align: left;">57.3%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Interprétation (résumé par question) : la comparaison des moyennes (en points) et des proportions au score maximal (“full score”) permet d’identifier des questions déjà très bien réussies avant (effet plafond) versus celles ayant une marge de progression importante.</p>
+</section>
+<section id="exploration-par-âge-gain-par-question-du-barème" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="exploration-par-âge-gain-par-question-du-barème"><span class="header-section-number">5.2</span> Exploration par âge : gain par question (% du barème)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-50-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation (âge × question) : ces points (± IC95%) comparent les gains moyens par tranche d’âge pour chaque question, afin de repérer des items où certains groupes progressent davantage.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 70%">
+<col style="width: 5%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: left;">n</th>
+<th style="text-align: left;">p (Kruskal-Wallis)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Boire de l’alcool pendant la grossesse nuit au bébé ?</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.0135</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">L’alcool bu par la mère arrive jusqu’au bébé ?</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.0464</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Place de l’homme dans la prévention</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.2229</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Quantité d’alcool risquée pendant la grossesse</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.2430</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Conséquences possibles sur le bébé à naître</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.3164</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Âges possibles de détection des troubles</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.3417</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Conséquences du SAF</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.7115</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Verre contenant le plus d’alcool</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.7645</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Interprétation (âge × questions) : 2 question(s) montrent une hétérogénéité des gains selon l’âge (p &lt; 0.05). Résultat exploratoire, sans correction pour multiplicité.</p>
+</section>
+<section id="synthèse-des-gains-par-question" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="synthèse-des-gains-par-question"><span class="header-section-number">5.3</span> Synthèse des gains par question</h3>
+<p>Pour avoir une vue d’ensemble, le graphique suivant représente le gain moyen pour chaque question, exprimé en <strong>pourcentage du barème maximum de la question</strong>. Les questions sont triées de celle qui a le plus progressé à celle qui a le moins progressé.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/plot_gain_by_question_summary-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : Ce graphique synthétise l’impact de l’intervention sur chaque connaissance spécifique. On voit immédiatement que les questions sur Âges possibles de détection des troubles et Quantité d’alcool risquée pendant la grossesse ont montré la plus forte progression, tandis que d’autres, probablement déjà bien maîtrisées au départ, ont peu évolué.</p>
+</section>
+<section id="tests-par-question-appariés" class="level3" data-number="5.4">
+<h3 data-number="5.4" class="anchored" data-anchor-id="tests-par-question-appariés"><span class="header-section-number">5.4</span> Tests par question (appariés)</h3>
+<p>Pour chaque item, on teste si le score augmente après intervention (unilatéral : après &gt; avant). Pour les questions à score binaire, cela correspond à une amélioration du taux de “bonne réponse”.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 66%">
+<col style="width: 4%">
+<col style="width: 13%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: left;">n</th>
+<th style="text-align: left;">p (t-test)</th>
+<th style="text-align: left;">p (McNemar)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Boire de l’alcool pendant la grossesse nuit au bébé ?</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.0792</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Conséquences du SAF</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.0015</td>
+<td style="text-align: left;">0.0973</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Conséquences possibles sur le bébé à naître</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.0248</td>
+<td style="text-align: left;">0.1416</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">L’alcool bu par la mère arrive jusqu’au bébé ?</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.0054</td>
+<td style="text-align: left;">0.0269</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Place de l’homme dans la prévention</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+<td style="text-align: left;">0.0001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Quantité d’alcool risquée pendant la grossesse</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Verre contenant le plus d’alcool</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">0.0001</td>
+<td style="text-align: left;">0.0009</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Âges possibles de détection des troubles</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Interprétation (tests par question) : 7 question(s) sont significativement améliorées (t-test apparié), résultats exploratoires sans correction pour multiplicité.</p>
+</section>
+<section id="graphique-score-moyen-par-question-avant-vs-après" class="level3" data-number="5.5">
+<h3 data-number="5.5" class="anchored" data-anchor-id="graphique-score-moyen-par-question-avant-vs-après"><span class="header-section-number">5.5</span> Graphique : score moyen par question (avant vs après)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/plot_q_means_dumbbell-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="version-enrichie-avec-valeur-du-gain" class="level4" data-number="5.5.1">
+<h4 data-number="5.5.1" class="anchored" data-anchor-id="version-enrichie-avec-valeur-du-gain"><span class="header-section-number">5.5.1</span> Version enrichie (avec valeur du gain)</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/plot_q_means_dumbbell_enriched-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation (moyennes par question) : les barres représentent la moyenne exprimée en <strong>% du barème</strong> (avec IC95%). Les plus fortes progressions moyennes concernent notamment : Âges possibles de détection des troubles; Quantité d’alcool risquée pendant la grossesse; Place de l’homme dans la prévention.</p>
+</section>
+</section>
+<section id="effet-plafond-par-question-proportion-au-score-maximal" class="level3" data-number="5.6">
+<h3 data-number="5.6" class="anchored" data-anchor-id="effet-plafond-par-question-proportion-au-score-maximal"><span class="header-section-number">5.6</span> Effet plafond par question : proportion au score maximal</h3>
+<p>Idée : si une question est déjà très souvent au score maximal au Q1, il reste peu de marge de progression au Q2 (effet plafond).</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 77%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Question</th>
+<th style="text-align: left;">Barème max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Q1</td>
+<td style="text-align: left;">Boire de l’alcool pendant la grossesse nuit au bébé ?</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Q2</td>
+<td style="text-align: left;">L’alcool bu par la mère arrive jusqu’au bébé ?</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Q3</td>
+<td style="text-align: left;">Conséquences possibles sur le bébé à naître</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Q4</td>
+<td style="text-align: left;">Conséquences du SAF</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Q5</td>
+<td style="text-align: left;">Âges possibles de détection des troubles</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Q6</td>
+<td style="text-align: left;">Quantité d’alcool risquée pendant la grossesse</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Q7</td>
+<td style="text-align: left;">Verre contenant le plus d’alcool</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Q8</td>
+<td style="text-align: left;">Place de l’homme dans la prévention</td>
+<td style="text-align: left;">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-56-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : si l’item est déjà très souvent “au maximum” au Q1, la hausse possible au Q2 est mécaniquement limitée (effet plafond).</p>
+</section>
+<section id="distribution-des-scores-par-question-1-graphique-par-question" class="level3" data-number="5.7">
+<h3 data-number="5.7" class="anchored" data-anchor-id="distribution-des-scores-par-question-1-graphique-par-question"><span class="header-section-number">5.7</span> Distribution des scores par question (1 graphique par question)</h3>
+<p>Abscisse = <strong>score en points</strong> (0 à barème max) ; ordonnée = <strong>% de participantes</strong> (avec IC95%).</p>
+<p><strong>Boire de l’alcool pendant la grossesse nuit au bébé ?</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-58-1.png" class="img-fluid" width="672"> Interprétation : moyenne 4.90/5 (Q1) vs 5.00/5 (Q2), soit 1.9% du barème en moyenne. Proportion au score maximal : 98.1% (Q1) vs 100.0% (Q2). Tests appariés : t-test non statistiquement significatif (p = 0.0792). Astérisques (McNemar, p &lt; 0,05) : 0 niveau(x) de score avec différence de proportion.</p>
+<p><strong>L’alcool bu par la mère arrive jusqu’au bébé ?</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-58-2.png" class="img-fluid" width="672"> Interprétation : moyenne 4.56/5 (Q1) vs 4.95/5 (Q2), soit 7.8% du barème en moyenne. Proportion au score maximal : 91.3% (Q1) vs 99.0% (Q2). Tests appariés : t-test statistiquement significatif (p = 0.0054). Astérisques (McNemar, p &lt; 0,05) : 2 niveau(x) de score avec différence de proportion.</p>
+<p><strong>Conséquences possibles sur le bébé à naître</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-58-3.png" class="img-fluid" width="672"> Interprétation : moyenne 4.66/6 (Q1) vs 5.09/6 (Q2), soit 7.1% du barème en moyenne. Proportion au score maximal : 50.5% (Q1) vs 62.1% (Q2). Tests appariés : t-test statistiquement significatif (p = 0.0248). Astérisques (McNemar, p &lt; 0,05) : 0 niveau(x) de score avec différence de proportion.</p>
+<p><strong>Conséquences du SAF</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-58-4.png" class="img-fluid" width="672"> Interprétation : moyenne 4.09/5 (Q1) vs 4.58/5 (Q2), soit 9.9% du barème en moyenne. Proportion au score maximal : 64.1% (Q1) vs 75.7% (Q2). Tests appariés : t-test statistiquement significatif (p = 0.0015). Astérisques (McNemar, p &lt; 0,05) : 1 niveau(x) de score avec différence de proportion.</p>
+<p><strong>Âges possibles de détection des troubles</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-58-5.png" class="img-fluid" width="672"> Interprétation : moyenne 2.08/5 (Q1) vs 3.74/5 (Q2), soit 33.2% du barème en moyenne. Proportion au score maximal : 20.4% (Q1) vs 57.3% (Q2). Tests appariés : t-test statistiquement significatif (p = &lt; 1e-4). Astérisques (McNemar, p &lt; 0,05) : 4 niveau(x) de score avec différence de proportion.</p>
+<p><strong>Quantité d’alcool risquée pendant la grossesse</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-58-6.png" class="img-fluid" width="672"> Interprétation : moyenne 3.69/5 (Q1) vs 4.85/5 (Q2), soit 23.3% du barème en moyenne. Proportion au score maximal : 73.8% (Q1) vs 97.1% (Q2). Tests appariés : t-test statistiquement significatif (p = &lt; 1e-4). Astérisques (McNemar, p &lt; 0,05) : 2 niveau(x) de score avec différence de proportion.</p>
+<p><strong>Verre contenant le plus d’alcool</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-58-7.png" class="img-fluid" width="672"> Interprétation : moyenne 3.93/5 (Q1) vs 4.81/5 (Q2), soit 17.5% du barème en moyenne. Proportion au score maximal : 78.6% (Q1) vs 96.1% (Q2). Tests appariés : t-test statistiquement significatif (p = 0.0001). Astérisques (McNemar, p &lt; 0,05) : 2 niveau(x) de score avec différence de proportion.</p>
+<p><strong>Place de l’homme dans la prévention</strong></p>
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-58-8.png" class="img-fluid" width="672"> Interprétation : moyenne 2.60/4 (Q1) vs 3.43/4 (Q2), soit 20.6% du barème en moyenne. Proportion au score maximal : 37.9% (Q1) vs 64.1% (Q2). Tests appariés : t-test statistiquement significatif (p = &lt; 1e-4). Astérisques (McNemar, p &lt; 0,05) : 3 niveau(x) de score avec différence de proportion.</p>
+</section>
+<section id="vue-densemble-distribution-q1-vs-q2-facettes" class="level3" data-number="5.8">
+<h3 data-number="5.8" class="anchored" data-anchor-id="vue-densemble-distribution-q1-vs-q2-facettes"><span class="header-section-number">5.8</span> Vue d’ensemble : distribution Q1 vs Q2 (facettes)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/plot_q_dist_facetted-1.png" class="img-fluid figure-img" width="1344"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : cette vue d’ensemble permet de comparer visuellement les 8 questions sur un seul graphique. Un décalage de la densité vers la droite (vert vs bleu) indique une progression après l’intervention.</p>
+</section>
+<section id="forest-plot-récapitulatif-gain-global-par-question" class="level3" data-number="5.9">
+<h3 data-number="5.9" class="anchored" data-anchor-id="forest-plot-récapitulatif-gain-global-par-question"><span class="header-section-number">5.9</span> Forest plot récapitulatif (gain global + par question)</h3>
+<p>Ce graphique de type “forest plot” résume sur un seul graphique le gain moyen global et les gains par question (avec IC95%), permettant une comparaison immédiate.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/plot_forest-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : ce forest plot récapitule l’ensemble des résultats. Le losange noir en bas représente le gain global, tandis que les points verts montrent les gains par question. Les questions dont l’IC95% ne croise pas zéro sont celles où l’amélioration est statistiquement significative (à titre exploratoire, sans correction pour multiplicité).</p>
+</section>
+</section>
+<section id="résultats" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="résultats"><span class="header-section-number">6</span> Résultats</h2>
+<section id="biais-de-sélection-potentiel-q1-appariées-vs-q1-non-appariées" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="biais-de-sélection-potentiel-q1-appariées-vs-q1-non-appariées"><span class="header-section-number">6.1</span> Biais de sélection potentiel : Q1 appariées vs Q1 non appariées</h3>
+<p>Idée : comparer les participantes ayant répondu au premier questionnaire puis appariées aux patientes ayant répondu au 2ème questionnaire, par rapport aux patientes ayant répondu au 1er questionnaire mais n’ayant pas été appariées.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">groupe</th>
+<th style="text-align: left;">n</th>
+<th style="text-align: left;">mean_q1</th>
+<th style="text-align: left;">sd_q1</th>
+<th style="text-align: left;">median_q1</th>
+<th style="text-align: left;">iqr_q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Q1 appariées (ont un Q2)</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">15.26</td>
+<td style="text-align: left;">3.77</td>
+<td style="text-align: left;">16.0</td>
+<td style="text-align: left;">4.75</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Q1 non appariées (pas de Q2)</td>
+<td style="text-align: left;">69</td>
+<td style="text-align: left;">11.81</td>
+<td style="text-align: left;">3.89</td>
+<td style="text-align: left;">12.5</td>
+<td style="text-align: left;">6.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 56%">
+<col style="width: 7%">
+<col style="width: 5%">
+<col style="width: 10%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Test</th>
+<th style="text-align: left;">t</th>
+<th style="text-align: left;">df</th>
+<th style="text-align: left;">p-value</th>
+<th style="text-align: left;">IC95% diff.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Welch t-test (Q1 appariées vs non appariées)</td>
+<td style="text-align: left;">-5.76</td>
+<td style="text-align: left;">143</td>
+<td style="text-align: left;">&lt; 1e-4</td>
+<td style="text-align: left;">[-4.63 ; -2.26]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-61-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : si le score initial Q1 est différent entre appariées et non appariées (tests ci-dessus), cela suggère un <strong>biais de sélection</strong>. Dans ce cas, utiliser la moyenne Q1 “totale” pour estimer un gain (en la comparant à la moyenne Q2) serait <strong>non valide</strong>, car cela comparerait des populations différentes.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Ce que cela signifie concrètement">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Ce que cela signifie concrètement
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Les tests et le graphique confirment que les participantes qui ont répondu au Q2 (“appariées”) avaient déjà un <strong>score initial significativement plus élevé</strong>.</p>
+<ul>
+<li><strong>Score Q1 moyen (appariées) :</strong> 15,26</li>
+<li><strong>Score Q1 moyen (non appariées) :</strong> 11,81</li>
+</ul>
+<p>Il serait donc <strong>méthodologiquement faux</strong> de comparer la moyenne de <em>tous</em> les Q2 à la moyenne de <em>tous</em> les Q1. La seule méthode correcte est l’analyse <strong>appariée</strong>, qui mesure l’évolution au sein de chaque personne ayant complété les deux questionnaires.</p>
+<p>Interprétation possible (à discuter) : si les participantes non appariées avaient eu un score initial très élevé, on pourrait suspecter qu’elles avaient moins ressenti le besoin de répondre au second questionnaire. <strong>Ici, c’est plutôt l’inverse</strong> (les appariées ont un score initial moyen plus élevé), ce qui suggère plutôt que les participantes les plus informées (ou les plus motivées) ont davantage répondu au Q2.</p>
+</div>
+</div>
+</section>
+<section id="mise-en-évidence-de-la-moyenne-initiale-q1" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="mise-en-évidence-de-la-moyenne-initiale-q1"><span class="header-section-number">6.2</span> Mise en évidence de la moyenne initiale (Q1)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 3%">
+<col style="width: 25%">
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Échantillon</th>
+<th style="text-align: left;">n</th>
+<th style="text-align: left;">Moyenne initiale (Q1, /20)</th>
+<th style="text-align: left;">Écart-type (Q1)</th>
+<th style="text-align: left;">IC95% bas (Q1)</th>
+<th style="text-align: left;">IC95% haut (Q1)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Q1 total (avant appariement)</td>
+<td style="text-align: left;">172</td>
+<td style="text-align: left;">13.88</td>
+<td style="text-align: left;">4.17</td>
+<td style="text-align: left;">13.25</td>
+<td style="text-align: left;">14.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Q1 apparié (paires complètes)</td>
+<td style="text-align: left;">103</td>
+<td style="text-align: left;">15.26</td>
+<td style="text-align: left;">3.77</td>
+<td style="text-align: left;">14.52</td>
+<td style="text-align: left;">16.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Interprétation : la moyenne initiale du score global (Q1) est de <strong>13,88/20</strong> avant appariement, et de <strong>15,26/20</strong> dans l’échantillon apparié, ce qui suggère une marge de progression limitée vers 20/20 (effet plafond possible).</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Âge</th>
+<th style="text-align: left;">Q1</th>
+<th style="text-align: left;">Q2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Moins de 18 ans</td>
+<td style="text-align: left;">6 (3.5%)</td>
+<td style="text-align: left;">1 (1.0%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Entre 18 et 24 ans</td>
+<td style="text-align: left;">38 (22.1%)</td>
+<td style="text-align: left;">25 (24.3%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Entre 25 et 29 ans</td>
+<td style="text-align: left;">39 (22.7%)</td>
+<td style="text-align: left;">22 (21.4%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Entre 30 et 34 ans</td>
+<td style="text-align: left;">34 (19.8%)</td>
+<td style="text-align: left;">23 (22.3%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Entre 35 et 39 ans</td>
+<td style="text-align: left;">27 (15.7%)</td>
+<td style="text-align: left;">17 (16.5%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Entre 40 et 44 ans</td>
+<td style="text-align: left;">11 (6.4%)</td>
+<td style="text-align: left;">4 (3.9%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Entre 45 et 49 ans</td>
+<td style="text-align: left;">14 (8.1%)</td>
+<td style="text-align: left;">8 (7.8%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">50 ans et plus</td>
+<td style="text-align: left;">3 (1.7%)</td>
+<td style="text-align: left;">3 (2.9%)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Interprétation : ce tableau décrit la distribution des tranches d’âge dans l’échantillon Q1 (colonne Q1) et dans l’échantillon ayant répondu au second temps (colonne Q2).</p>
+</section>
+<section id="score-global-au-q2-q2-total" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="score-global-au-q2-q2-total"><span class="header-section-number">6.3</span> Score global au Q2 (Q2 total)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">n (Q2)</th>
+<th style="text-align: left;">Moyenne Q2 (/20)</th>
+<th style="text-align: left;">Min (/20)</th>
+<th style="text-align: left;">Max (/20)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">106</td>
+<td style="text-align: left;">18.19</td>
+<td style="text-align: left;">4.5</td>
+<td style="text-align: left;">20</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Interprétation : ce tableau décrit le score global observé au Q2 dans l’ensemble des répondantes au second questionnaire (n = 106). Cette moyenne ne doit pas être utilisée pour calculer un “gain avant/après”, car le Q1 correspondant n’est pas disponible pour toutes les répondantes du Q2 et la comparaison avant/après doit se faire sur des données appariées (mêmes participantes au Q1 et au Q2).</p>
+</section>
+</section>
+<section id="discussion" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="discussion"><span class="header-section-number">7</span> Discussion</h2>
+<section id="résultats-principaux-1" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="résultats-principaux-1"><span class="header-section-number">7.1</span> Résultats principaux</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Les 3 conclusions clés">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Les 3 conclusions clés
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p><strong>L’intervention a fonctionné :</strong> amélioration statistiquement significative des connaissances, avec un gain moyen de <strong>2.97 points</strong> (IC95% : [2.13 ; 3.81], d de Cohen = 0.69, effet moyen). Le message principal est positif.</p></li>
+<li><p><strong>L’effet est modéré par un effet plafond :</strong> le score de départ était déjà élevé (15,26/20), limitant la marge de progression. Le gain relatif moyen (34.9% de la marge disponible) est plus informatif que le gain brut.</p></li>
+<li><p><strong>L’effet est homogène :</strong> aucune différence significative selon l’âge (Kruskal-Wallis : p = 0.3518). L’intervention bénéficie à toutes les participantes de manière comparable.</p></li>
+</ol>
+</div>
+</div>
+<p>Sur 103 participantes appariées, le score moyen passe de <strong>15.26/20</strong> à <strong>18.22/20</strong>, soit un gain moyen de <strong>2.97 point(s)</strong> (t-test apparié : p = &lt; 1e-4). En pratique, <strong>50/103</strong> participantes (<strong>48.5%</strong>) ont un gain &gt;= 3 points. L’analyse par question (exploratoire) montre que les plus fortes progressions concernent : Âges possibles de détection des troubles; Quantité d’alcool risquée pendant la grossesse; Place de l’homme dans la prévention.</p>
+</section>
+<section id="limites-méthodologiques" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="limites-méthodologiques"><span class="header-section-number">7.2</span> Limites méthodologiques</h3>
+<ol type="1">
+<li><p><strong>Biais de sélection (attrition) :</strong> les participantes appariées avaient un score initial plus élevé que les non appariées, ce qui suggère un biais de sélection par motivation/engagement. L’analyse avant/après reste valide sur les paires, mais la généralisation doit être prudente. L’estimation d’un gain “avant/après” doit reposer sur les participantes ayant les deux mesures ; la moyenne Q2 “totale” (18,19/20 sur 106 réponses) reste descriptive et ne peut servir à estimer un gain.</p></li>
+<li><p><strong>Appariement indirect :</strong> l’appariement repose sur l’âge et la ville, sans identifiant unique. Toute erreur d’appariement tend à “diluer” l’effet mesuré.</p></li>
+<li><p><strong>Absence de groupe contrôle :</strong> sans groupe comparable, on ne peut pas attribuer formellement l’amélioration à la seule intervention. C’est une limite classique des études avant-après.</p></li>
+<li><p><strong>QCM = connaissances, pas comportements :</strong> mieux répondre au QCM ne garantit pas un changement de comportement, même si c’est un premier indicateur.</p></li>
+</ol>
+</section>
+<section id="recommandations-pour-une-future-étude" class="level3" data-number="7.3">
+<h3 data-number="7.3" class="anchored" data-anchor-id="recommandations-pour-une-future-étude"><span class="header-section-number">7.3</span> Recommandations pour une future étude</h3>
+<ol type="1">
+<li><strong>Identifiant unique anonyme</strong> pour relier Q1 et Q2 de façon certaine et limiter les pertes au suivi.</li>
+<li><strong>Groupe contrôle randomisé</strong> (information différée à un autre groupe) pour isoler l’effet de l’intervention.</li>
+<li><strong>Questionnaire plus discriminant</strong> : questions plus difficiles pour limiter l’effet plafond et mieux discriminer les niveaux de connaissance.</li>
+<li><strong>Critères de jugement élargis</strong> : mesurer les intentions de changement, l’auto-efficacité, et idéalement des indicateurs de comportement, avec un suivi à distance (3-6 mois).</li>
+</ol>
+</section>
+<section id="version-thèse-paragraphe" class="level3" data-number="7.4">
+<h3 data-number="7.4" class="anchored" data-anchor-id="version-thèse-paragraphe"><span class="header-section-number">7.4</span> Version thèse (paragraphe)</h3>
+<p>Dans cette étude avant-après (n = 103 paires), le score moyen au QCM augmente de <strong>15.26/20</strong> avant information à <strong>18.22/20</strong> après information, soit un gain moyen de <strong>2.97 point(s)</strong> (d de Cohen = 0.69, effet moyen). Les tests appariés concluent à une amélioration statistiquement significative (t-test unilatéral : p = &lt; 1e-4). L’intervalle de confiance bilatéral du gain moyen est <strong>[2.13 ; 3.81]</strong>. Au niveau individuel, <strong>50/103</strong> participantes (<strong>48.5%</strong>) atteignent un gain &gt;= 3 points. Le gain relatif moyen (rapporté à la marge de progression théorique) est de <strong>34.9%</strong>, ce qui permet de nuancer l’effet plafond observé sur le gain brut. L’analyse exploratoire par régression logistique (ajustée sur l’âge et la langue) confirme que le facteur principal est le score initial (effet plafond), sans effet clair de l’âge ni de la langue. L’analyse par question indique que les plus fortes progressions concernent : Âges possibles de détection des troubles; Quantité d’alcool risquée pendant la grossesse; Place de l’homme dans la prévention.</p>
+<p>Plusieurs limites peuvent influencer l’interprétation : l’appariement repose sur des informations indirectes (âge, ville), l’absence de groupe contrôle empêche d’attribuer formellement l’évolution au seul message d’information, et un QCM mesure surtout des connaissances à court terme. Pour améliorer l’évaluation dans une étude future, il serait souhaitable d’utiliser un identifiant unique, d’ajouter un groupe contrôle, de renforcer la sensibilité du questionnaire et d’intégrer des critères plus proches de l’objectif clinique, avec un suivi à distance pour évaluer la persistance de l’effet.</p>
+</section>
+</section>
+<section id="annexes-techniques-détails-statistiques" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="annexes-techniques-détails-statistiques"><span class="header-section-number">8</span> Annexes techniques (détails statistiques)</h2>
+<p>Cette section regroupe des compléments “techniques” utiles pour un lecteur souhaitant vérifier certains points méthodologiques, sans alourdir l’interprétation principale.</p>
+<section id="diagnostic-visuel-gain-global" class="level3" data-number="8.1">
+<h3 data-number="8.1" class="anchored" data-anchor-id="diagnostic-visuel-gain-global"><span class="header-section-number">8.1</span> Diagnostic visuel (gain global)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analyse_intervention_files/figure-html/unnamed-chunk-65-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Interprétation : ce QQ-plot donne une idée de l’éloignement à la normalité. L’analyse principale ne repose pas uniquement sur la normalité car le bootstrap du gain moyen est également rapporté.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

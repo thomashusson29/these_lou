@@ -1,0 +1,2711 @@
+﻿match_id;age_key;city_key;match_type;Q1_city_key;Q2_city_key;Q1_row;Q2_row;Q1_score_parsed;Q2_score_parsed;score_diff_parsed;Q1_score_utilisee;Q2_score_utilisee;score_diff_utilisee;amelioree;Q1__Quel âge avez-vous ?;Q1__Dans quelle ville habitez-vous ?;Q1__Pensez-vous que boire de l’alcool pendant la grossesse peut nuire au bébé ?;Q1__Est-ce que l’alcool bu par la mère arrive jusqu’au bébé ?;Q1__Quelles peuvent être les conséquences de l’alcool sur le bébé à naître ?;Q1__Le syndrome d’alcoolisation fœtale (SAF) est la conséquence la plus grave de l’alcool pendant la grossesse. Que provoque-t-il ?;Q1__Quelle quantité d’alcool est risquée pendant la grossesse ?;Q1__Lequel de ces verres contient le plus d’alcool ?;Q1__À quel âge peut-on détecter les troubles liés à l’alcool pendant la grossesse ?;Q1__Pouvez-vous renseigner votre adresse mail s’il vous plaît ?;Q1__Bravo ! (N’oubliez pas de cliquer sur « soumettre ») Vous avez obtenu la note de :;Q1__Quelle peut être la place de l’homme dans la prévention des risques liés à l’alcool pendant la grossesse ?;Q1__Langue;Q2__Quel âge avez-vous ?;Q2__Dans quelle ville habitez-vous ?;Q2__Pensez-vous que boire de l’alcool pendant la grossesse peut nuire au bébé ?;Q2__Est-ce que l’alcool bu par la mère arrive jusqu’au bébé ?;Q2__Quelles peuvent être les conséquences de l’alcool sur le bébé à naître ?;Q2__Le syndrome d’alcoolisation fœtale (SAF) est la conséquence la plus grave de l’alcool pendant la grossesse. Que provoque-t-il ?;Q2__À quel âge peut-on détecter les troubles liés à l’alcool pendant la grossesse ?;Q2__Quelle quantité d’alcool est risquée pendant la grossesse ?;Q2__Lequel de ces verres contient le plus d’alcool ?;Q2__Quelle peut être la place de l’homme dans la prévention des risques liés à l’alcool pendant la grossesse ?;Q2__Bravo ! Vous avez obtenu la note de :;Q2__Langue
+1;entre 35 et 39 ans;saint pierre;age+ville;saint pierre;saint pierre;1;1;16.5;20;3.5;16.5;20;3.5;1;Entre 35 et 39 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;tsun.roux@gmail.com;16,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";français;Entre 35 et 39 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+2;entre 35 et 39 ans;saint paul;age+ville;saint paul;saint paul;2;14;15.5;17.5;2;15.5;17.5;2;1;Entre 35 et 39 ans;St Paul;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;billieux-m@hotmail.fr;15,50;Il devrait être plus présent pour sa femme;français;Entre 35 et 39 ans;Saint Paul;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";17,50;français
+3;entre 40 et 44 ans;;age;saint denis;97410;3;105;15.5;20;4.5;15.5;20;4.5;1;Entre 40 et 44 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans";;15,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 40 et 44 ans;97410;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;créole
+4;entre 45 et 49 ans;saint pierre;age+ville;saint pierre;saint pierre;4;61;15.5;18;2.5;15.5;18;2.5;1;Entre 45 et 49 ans;saint pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;paulinehenry974@gmail.com;15,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 45 et 49 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;français
+5;entre 35 et 39 ans;etang sale;age+ville;etang sale;etang sale;5;104;16.5;20;3.5;16.5;20;3.5;1;Entre 35 et 39 ans;l'Etang Salé;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";;16,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 35 et 39 ans;l'étang salé;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;créole
+6;entre 45 et 49 ans;port;age+ville;port;port;6;3;17;20;3;17;20;3;1;Entre 45 et 49 ans;Le port;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;prunelle420@gmail.com;17;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 45 et 49 ans;Le port;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+7;entre 30 et 34 ans;saint denis;age+ville;saint denis;saint denis;7;4;16.5;20;3.5;16.5;20;3.5;1;Entre 30 et 34 ans;St Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;floriane.sabatte@laposte.net;16,50;Il devrait être plus présent pour sa femme;français;Entre 30 et 34 ans;Saint denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+8;entre 30 et 34 ans;saint gilles les hauts;age+ville;saint gilles les hauts;saint gilles les hauts;8;5;14.5;20;5.5;14.5;20;5.5;1;Entre 30 et 34 ans;Saint gilles les hauts;OUI;OUI;"Une malformation du cœur
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";charline.soulet@gmail.com;14,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 30 et 34 ans;Saint gilles les hauts;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+9;entre 35 et 39 ans;saline;age+ville;saline;saline;9;6;11;20;9;11;20;9;1;Entre 35 et 39 ans;La saline;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Des troubles du comportement";Plus d’un verre par mois;Tous contiennent la même quantité d’alcool;Tout au long de la vie;charlottemumu@gmail.com;11;Il devrait être plus présent pour sa femme;français;Entre 35 et 39 ans;La saline;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+10;entre 35 et 39 ans;;age;boucan canot;montagne;10;72;20;18;-2;20;18;-2;0;Entre 35 et 39 ans;Boucan canot;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";saragralichi@hotmail.fr;20;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 35 et 39 ans;La Montagne;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";18;français
+11;entre 18 et 24 ans;saline;age+ville;saline;saline;11;7;10.5;20;9.5;10.5;20;9.5;1;Entre 18 et 24 ans;Saline;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";Un retard mental;Plus d’un verre par mois;Tous contiennent la même quantité d’alcool;Dès 6 ans;luanacharlet@hotmail.fr;10,50;Il devrait être plus présent pour sa femme;français;Entre 18 et 24 ans;La saline;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+;moins de 18 ans;;;saint gilles;;12;;12.5;;;12.5;;;;Moins de 18 ans;Saint Gilles;OUI;NON;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Des troubles du comportement";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;sharina97434@gmail.com;12,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+;entre 30 et 34 ans;;;saint louis;;13;;5;;;5;;;;Entre 30 et 34 ans;Saint Louis;OUI;NON;Des troubles psychiatriques;Des troubles du comportement;À partir de 5 verres;Cocktail apéritif;"Dans le ventre de la mère
+Dès 6 ans";nolwennnn974@gmail.com;5;Il devrait arrêter l’alcool;français;;;;;;;;;;;;
+;entre 25 et 29 ans;;;saint gilles;;14;;12.5;;;12.5;;;;Entre 25 et 29 ans;Saint Gilles;OUI;OUI;"Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Tous contiennent la même quantité d’alcool;"Dès 6 ans
+À l'adolescence";;12,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+12;entre 25 et 29 ans;saint leu;age+ville;saint leu;saint leu;15;42;13.5;20;6.5;13.5;20;6.5;1;Entre 25 et 29 ans;Saint leu;OUI;OUI;"Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Tous contiennent la même quantité d’alcool;Tout au long de la vie;edithfermier@hotmail.fr;13,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 25 et 29 ans;Saint leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+13;entre 25 et 29 ans;;age;saline;chaloupe sainte leu;16;86;16.5;18.5;2;16.5;18.5;2;1;Entre 25 et 29 ans;La saline;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans";sylvieglenau@hotmail.fr;16,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 25 et 29 ans;La chaloupe sainte leu;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";18,50;créole
+;entre 45 et 49 ans;;;saline;;17;;17;;;17;;;;Entre 45 et 49 ans;La saline;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;pepita@msn.com;17;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+14;entre 18 et 24 ans;sainte marie;age+ville;sainte marie;sainte marie;18;95;7.5;17;9.5;7.5;17;9.5;1;Entre 18 et 24 ans;Sainte Marie;OUI;OUI;De l’épilepsie;Un retard mental;À partir de 20 verres;Cocktail apéritif;À l'adolescence;valerieperino@hotmail.fr;7,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Sainte Marie;OUI;OUI;"Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";17;créole
+;entre 35 et 39 ans;;;port;;19;;12;;;12;;;;Entre 35 et 39 ans;Le port;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des malformations du visage";À partir de 5 verres;Cocktail apéritif;"Dans le ventre de la mère
+Dès 6 ans";licrecebelin@gmail.com;12;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";français;;;;;;;;;;;;
+;entre 18 et 24 ans;;;sainte marie;;20;;4.5;;;4.5;;;;Entre 18 et 24 ans;Sainte Marie;OUI;NON;Un arrêt précoce de grossesse;Des troubles du comportement;Plus d’un verre par mois;Ballon de vin;Dès 6 ans;erickaferguson@hotmail.fr;4,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+;entre 25 et 29 ans;;;saline les bains;;21;;9.5;;;9.5;;;;Entre 25 et 29 ans;Saline les bains;OUI;OUI;"Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Verre de whisky;Tout au long de la vie;virginienini@hotmail.fr;9,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+;entre 18 et 24 ans;;;saint denis;;22;;7;;;7;;;;Entre 18 et 24 ans;Saint Denis;OUI;OUI;Une malformation du cœur;Un retard de croissance (petit poids et petite taille);Plus d’un verre par mois;Verre de rhum arrangé;Tout au long de la vie;;7;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+;entre 40 et 44 ans;;;possession;;23;;5;;;5;;;;Entre 40 et 44 ans;Possession;OUI;NON;"Un arrêt précoce de grossesse
+Une mort subite du nourrisson";Un retard mental;Plus d’un verre par mois;Ballon de vin;Dans le ventre de la mère;zoelarcanche@hotmail.fr;5;Il devrait arrêter l’alcool;français;;;;;;;;;;;;
+;entre 35 et 39 ans;;;saline les bains;;24;;4.5;;;4.5;;;;Entre 35 et 39 ans;Saline les bains;OUI;NON;Des troubles psychiatriques;Des troubles du comportement;À partir de 5 verres;Verre de whisky;Dès 6 ans;jinalechat@gmail.com;4,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+;entre 25 et 29 ans;;;possession;;25;;16.5;;;16.5;;;;Entre 25 et 29 ans;La possession;OUI;OUI;"Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dès 6 ans;momobiagg@gmail.com;16,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+15;entre 18 et 24 ans;saline;age+ville;saline;saline;26;10;13;19.5;6.5;13;19.5;6.5;1;Entre 18 et 24 ans;La saline;OUI;NON;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Plus d’un verre par mois;Tous contiennent la même quantité d’alcool;Tout au long de la vie;charlottemumumu@msn.com;13;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;La saline;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19,50;français
+16;entre 35 et 39 ans;saint gilles;age+ville;saint gilles;saint gilles;27;11;14.5;20;5.5;14.5;20;5.5;1;Entre 35 et 39 ans;Saint Gilles;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Plus d’un verre par jour;Tous contiennent la même quantité d’alcool;Dès 6 ans;;14,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 35 et 39 ans;Saint Gilles;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+17;entre 35 et 39 ans;saint leu;age+ville;saint leu;saint leu;28;32;17;17.5;0.5;17;17.5;0.5;1;Entre 35 et 39 ans;Saint leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte";fatimamama@hotmail.fr;17;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 35 et 39 ans;Saint leu;OUI;OUI;"Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";17,50;français
+;entre 45 et 49 ans;;;;;29;;15.5;;;15.5;;;;Entre 45 et 49 ans;;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";;15,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+18;entre 30 et 34 ans;;age;etang sale;97410;30;83;20;20;0;20;20;0;1;Entre 30 et 34 ans;Étang salé;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";manoncarthy@gmail.com;20;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 30 et 34 ans;97410;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+;entre 40 et 44 ans;;;saint denis;;31;;9.5;;;9.5;;;;Entre 40 et 44 ans;Saint Denis;OUI;OUI;"Une malformation du cœur
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";À partir de 5 verres;Verre de whisky;Dans le ventre de la mère;;9,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+19;entre 30 et 34 ans;saint leu;age+ville;saint leu;saint leu;32;71;18;20;2;18;20;2;1;Entre 30 et 34 ans;Saint leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;;18;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 30 et 34 ans;Saint leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+20;entre 25 et 29 ans;saint denis;age+ville;saint denis;saint denis;33;30;14;14.5;0.5;14;14.5;0.5;1;Entre 25 et 29 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Verre de rhum arrangé;"Dans le ventre de la mère
+Tout au long de la vie";moilolita@gmail.com;14;Il devrait être plus présent pour sa femme;français;Entre 25 et 29 ans;Saint Denis p;OUI;OUI;Des retards de développement neurologique;Un retard mental;"Dans le ventre de la mère
+Dès 6 ans
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";14,50;français
+;entre 35 et 39 ans;;;eperon;;34;;13.5;;;13.5;;;;Entre 35 et 39 ans;Éperon;OUI;OUI;Des retards de développement neurologique;"Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;zotzot@gmail.com;13,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+21;entre 18 et 24 ans;saline les bains;age+ville;saline les bains;saline les bains;35;13;18;20;2;18;20;2;1;Entre 18 et 24 ans;Saline les bains;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;lounasherifa@gmail.com;18;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;La saline les bains;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+;entre 18 et 24 ans;;;saint leu;;36;;15.5;;;15.5;;;;Entre 18 et 24 ans;Saint leu;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";ambredupont@gmail.com;15,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+22;entre 35 et 39 ans;saint paul;age+ville;saint paul;saint paul;37;15;12.5;18.5;6;12.5;18.5;6;1;Entre 35 et 39 ans;Saint paul;OUI;OUI;"De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Tous contiennent la même quantité d’alcool;Tout au long de la vie;anouck1988@msn.com;12,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 35 et 39 ans;Saint Paul;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait être plus présent pour sa femme";18,50;français
+;entre 45 et 49 ans;;;saint paul;;38;;15;;;15;;;;Entre 45 et 49 ans;Saint Paul;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;patriciadeleville@gmail.com;15;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";français;;;;;;;;;;;;
+;entre 25 et 29 ans;;;saint paul;;39;;10.5;;;10.5;;;;Entre 25 et 29 ans;Saint Paul;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Des troubles du comportement";Plus d’un verre par mois;Verre de whisky;"Dans le ventre de la mère
+Dès 6 ans";eliselabegette@hotmail.fr;10,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+;entre 35 et 39 ans;;;saint paul;;40;;10.5;;;10.5;;;;Entre 35 et 39 ans;Saint paul;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle";À partir de 5 verres;Verre de whisky;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence";paulita@gmail.com;10,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+;entre 25 et 29 ans;;;saline;;41;;11;;;11;;;;Entre 25 et 29 ans;La saline;OUI;NON;"Un arrêt précoce de grossesse
+Une mort subite du nourrisson";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement";À partir de 5 verres;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+Tout au long de la vie";gabrielledvd@gmail.com;11;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+23;entre 40 et 44 ans;saline;age+ville;saline;saline;42;97;13;17.5;4.5;13;17.5;4.5;1;Entre 40 et 44 ans;La saline;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Verre de rhum arrangé;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence";melanielpp@gmail.com;13;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 40 et 44 ans;La saline;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";17,50;créole
+;entre 18 et 24 ans;;;saint gilles;;43;;11.5;;;11.5;;;;Entre 18 et 24 ans;Saint Gilles;OUI;NON;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dès 6 ans;thealvaro@hotmail.fr;11,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+24;entre 30 et 34 ans;boucan canot;age+ville;boucan canot;boucan canot;44;106;17.5;18;0.5;17.5;18;0.5;1;Entre 30 et 34 ans;Boucan canot;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;dianarun@gmail.com;17,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";français;Entre 30 et 34 ans;Boucan canot;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;créole
+25;entre 25 et 29 ans;saint paul;age+ville;saint paul;saint paul;45;16;13.5;18.5;5;13.5;18.5;5;1;Entre 25 et 29 ans;Saint Paul;OUI;OUI;"De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;ilona974@hotmail.fr;13,50;Il devrait être plus présent pour sa femme;français;Entre 25 et 29 ans;Saint paul;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";18,50;français
+26;entre 45 et 49 ans;eperon;age+ville;eperon;eperon;46;17;9.5;19.5;10;9.5;19.5;10;1;Entre 45 et 49 ans;L’éperon;OUI;NON;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 20 verres;Verre de whisky;Dès 6 ans;;9,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 45 et 49 ans;L’éperon;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";19,50;français
+;entre 35 et 39 ans;;;saint pierre;;47;;16;;;16;;;;Entre 35 et 39 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";Un retard mental;Dès le premier verre;Tous contiennent la même quantité d’alcool;À l'adolescence;;16;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+27;entre 18 et 24 ans;saint gilles;age+ville;saint gilles;saint gilles;48;25;17.5;16.5;-1;17.5;16.5;-1;0;Entre 18 et 24 ans;Saint Gilles;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";phibslapagaille@gmail.com;17,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Saint Gilles;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Verre de rhum arrangé;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";16,50;français
+;entre 45 et 49 ans;;;saint pierre;;49;;9;;;9;;;;Entre 45 et 49 ans;Saint Pierre;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";Un retard mental;À partir de 20 verres;Verre de rhum arrangé;Dès 6 ans;;9;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+;moins de 18 ans;;;saint pierre;;50;;12;;;12;;;;Moins de 18 ans;Saint Pierre;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";Plus d’un verre par mois;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans";;12;Il devrait arrêter l’alcool;français;;;;;;;;;;;;
+28;moins de 18 ans;saint pierre;age+ville;saint pierre;saint pierre;51;43;14;18.5;4.5;14;18.5;4.5;1;Moins de 18 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Plus d’un verre par mois;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;;14;Il devrait être plus présent pour sa femme;français;Moins de 18 ans;Saint pierre;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18,50;français
+29;entre 25 et 29 ans;saint leu;age+ville;saint leu;saint leu;52;20;11.5;19;7.5;11.5;19;7.5;1;Entre 25 et 29 ans;Saint leu;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle";À partir de 5 verres;Tous contiennent la même quantité d’alcool;"Dès 6 ans
+À l'adolescence";;11,50;Il devrait être plus présent pour sa femme;français;Entre 25 et 29 ans;Saint leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";19;français
+;moins de 18 ans;;;saint pierre;;53;;3.5;;;3.5;;;;Moins de 18 ans;Saint Pierre;NON;NON;De l’épilepsie;Un retard mental;À partir de 5 verres;Verre de rhum arrangé;Dans le ventre de la mère;;3,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+;entre 30 et 34 ans;;;saint pierre;;54;;14;;;14;;;;Entre 30 et 34 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Verre de whisky;Tout au long de la vie;;14;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+30;50 ans et plus;saint louis;age+ville;saint louis;saint louis;55;44;2;19;17;2;19;17;1;50 ans et plus;Saint Louis;NON;NON;Des troubles psychiatriques;Des troubles du comportement;Plus d’un verre par jour;Verre de whisky;À l’âge adulte;;2;Il devrait arrêter l’alcool;français;50 ans et plus;Saint Louis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;19;français
+;entre 25 et 29 ans;;;saint pierre;;56;;6.5;;;6.5;;;;Entre 25 et 29 ans;Saint Pierre;NON;NON;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 20 verres;Coupe de mousseux;Dans le ventre de la mère;;6,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+31;entre 18 et 24 ans;saline;age+ville;saline;saline;57;23;9.5;18.5;9;9.5;18.5;9;1;Entre 18 et 24 ans;La saline;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des retards de développement neurologique";"Un retard mental
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Verre de rhum arrangé;Dans le ventre de la mère;;9,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;La saline;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18,50;français
+32;entre 30 et 34 ans;saline;age+ville;saline;saline;58;24;16.5;20;3.5;16.5;20;3.5;1;Entre 30 et 34 ans;La saline;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;jannielopez@msn.com;16,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 30 et 34 ans;La saline;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+;entre 30 et 34 ans;;;97450;;59;;14.5;;;14.5;;;;Entre 30 et 34 ans;97450;OUI;OUI;Des retards de développement neurologique;"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;maeva.derfla@hotmail.fr;14,50;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;;;;;;;;;;;;
+;entre 30 et 34 ans;;;saint andre;;60;;12;;;12;;;;Entre 30 et 34 ans;Saint André;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Plus d’un verre par mois;Verre de whisky;"Dans le ventre de la mère
+Dès 6 ans";lolote974@hotmail.fr;12;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+33;entre 30 et 34 ans;sainte anne;age+ville;sainte anne;sainte anne;61;52;9.5;18;8.5;9.5;18;8.5;1;Entre 30 et 34 ans;Ste Anne;OUI;OUI;"Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Verre de rhum arrangé;Dès 6 ans;annedesteanne@hotmail.fr;9,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";français;Entre 30 et 34 ans;Sainte Anne;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dans le ventre de la mère;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;français
+34;entre 35 et 39 ans;montagne;age+ville;montagne;montagne;62;38;9;20;11;9;20;11;1;Entre 35 et 39 ans;La montagne;OUI;OUI;"Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Verre de whisky;"Dans le ventre de la mère
+Dès 6 ans";sharina974@gmail.com;9;Il devrait être plus présent pour sa femme;français;Entre 35 et 39 ans;La montagne;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+35;entre 35 et 39 ans;saint paul;age+ville;saint paul;saint paul;63;2;16.5;20;3.5;16.5;20;3.5;1;Entre 35 et 39 ans;saint paul;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;gazou_974@hotmail.com;16,50;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;Entre 35 et 39 ans;Saint Paul;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+36;entre 35 et 39 ans;eperon;age+ville;eperon;eperon;64;68;15.5;19.5;4;15.5;19.5;4;1;Entre 35 et 39 ans;L’eperon;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";monalisa@hotmail.fr;15,50;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;Entre 35 et 39 ans;Éperon;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19,50;français
+;entre 35 et 39 ans;;;saint phillipe;;65;;8.5;;;8.5;;;;Entre 35 et 39 ans;Saint Phillipe;OUI;OUI;"Une mort subite du nourrisson
+De l’épilepsie";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Plus d’un verre par jour;Verre de whisky;Dans le ventre de la mère;maeva974@gmail.com;8,5;Il devrait arrêter l’alcool;français;;;;;;;;;;;;
+37;entre 30 et 34 ans;saint pierre;age+ville;saint pierre;saint pierre;66;54;20;18;-2;20;18;-2;0;Entre 30 et 34 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";loupardessus@gmail.com;20;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 30 et 34 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;français
+;entre 30 et 34 ans;;;possession;;67;;14;;;14;;;;Entre 30 et 34 ans;La possession;OUI;OUI;"Un arrêt précoce de grossesse
+Une mort subite du nourrisson";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;soniabelaz@gmail.com;14;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;;;;;;;;;;;;
+;entre 40 et 44 ans;;;possession;;68;;7;;;7;;;;Entre 40 et 44 ans;La Possession;OUI;OUI;Des troubles psychiatriques;Un retard mental;Plus d’un verre par jour;Verre de whisky;Dans le ventre de la mère;;7;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+38;entre 25 et 29 ans;saint leu;age+ville;saint leu;saint leu;69;51;12.5;16;3.5;12.5;16;3.5;1;Entre 25 et 29 ans;Saint Leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Verre de rhum arrangé;"Dans le ventre de la mère
+Tout au long de la vie";chloedelebarre@hotmail.fr;12,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 25 et 29 ans;Saint leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+Des retards de développement neurologique";"Un retard mental
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";16;français
+39;entre 18 et 24 ans;;age;saint denis;saint pierre;70;57;16.5;16;-0.5;16.5;16;-0.5;0;Entre 18 et 24 ans;Saint-Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;suzanne.deleb@gmail.com;16,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une mort subite du nourrisson";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dans le ventre de la mère;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";16;français
+40;entre 25 et 29 ans;saint denis;age+ville;saint denis;saint denis;71;46;17.5;18;0.5;17.5;18;0.5;1;Entre 25 et 29 ans;SAINT DENIS;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;;17,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 25 et 29 ans;Saint Denis;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;français
+;entre 45 et 49 ans;;;petite ile;;72;;15.5;;;15.5;;;;Entre 45 et 49 ans;Petite Île;OUI;OUI;"Un arrêt précoce de grossesse
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;donatejessica@gmail.com;15,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+;entre 30 et 34 ans;;;saint anne;;73;;14.5;;;14.5;;;;Entre 30 et 34 ans;Saint-Anne;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Cocktail apéritif;Dans le ventre de la mère;angele.mc@hotmail.fr;14,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+;entre 30 et 34 ans;;;saint louis;;74;;13;;;13;;;;Entre 30 et 34 ans;Saint louis;OUI;OUI;"Un arrêt précoce de grossesse
+Des retards de développement neurologique";Un retard de croissance (petit poids et petite taille);Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;alix.dumas@icloud.com;13;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+41;entre 30 et 34 ans;saint denis;age+ville;saint denis;saint denis;75;50;16;18.5;2.5;16;18.5;2.5;1;Entre 30 et 34 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;justinemazereeuw@gmail.com;16;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 30 et 34 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";18,50;français
+42;entre 30 et 34 ans;saint gilles;age+ville;saint gilles;saint gilles;76;73;15.5;16.5;1;15.5;16.5;1;1;Entre 30 et 34 ans;Saint Gilles;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;sprietale@gmail.com;15,50;Il devrait être plus présent pour sa femme;français;Entre 30 et 34 ans;Saint Gilles;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;Il devrait être plus présent pour sa femme;16,50;français
+43;entre 30 et 34 ans;saint joseph;age+ville;saint joseph;saint joseph;77;34;14;15;1;14;15;1;1;Entre 30 et 34 ans;Saint joseph;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Plus d’un verre par jour;Tous contiennent la même quantité d’alcool;Dès 6 ans;elise.delebarre@hotmail.fr;14;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;Entre 30 et 34 ans;Saint Joseph;OUI;OUI;"Un arrêt précoce de grossesse
+Une mort subite du nourrisson
+De l’épilepsie";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dans le ventre de la mère;Dès le premier verre;Tous contiennent la même quantité d’alcool;Il devrait être plus présent pour sa femme;15;français
+44;entre 18 et 24 ans;;age;saint benoit;saint pierre;78;63;19.5;18.5;-1;19.5;18.5;-1;0;Entre 18 et 24 ans;SAINT BENOÎT;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";plouvier.emma@icloud.com;19,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";français;Entre 18 et 24 ans;Saint pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";18,50;français
+45;entre 25 et 29 ans;saint pierre;age+ville;saint pierre;saint pierre;79;22;19.5;16.5;-3;19.5;16.5;-3;0;Entre 25 et 29 ans;Saint pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";nadirsahbani51@gmail.com;19,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 25 et 29 ans;Saint Pierre;OUI;OUI;"Une malformation du cœur
+De l’épilepsie";"Un retard mental
+Des troubles du comportement";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";16,50;français
+46;entre 18 et 24 ans;saint louis;age+ville;saint louis;saint louis;80;48;16.5;19;2.5;16.5;19;2.5;1;Entre 18 et 24 ans;Saint Louis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";Des malformations du visage;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";louis.leger.etu@univ-lille.fr;16,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;St Louis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";19;français
+47;entre 18 et 24 ans;tampon;age+ville;tampon;tampon;81;49;20;16.5;-3.5;20;16.5;-3.5;0;Entre 18 et 24 ans;Le tampon;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";misskinder59@gmail.com;20;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Tampon;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte";Dès le premier verre;Tous contiennent la même quantité d’alcool;Il devrait être plus présent pour sa femme;16,50;français
+48;entre 18 et 24 ans;saint benoit;age+ville;saint benoit;saint benoit;82;99;20;19;-1;20;19;-1;0;Entre 18 et 24 ans;Saint benoit;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";samimabrouk76@gmail.com;20;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Saint Benoit;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19;créole
+49;entre 18 et 24 ans;;age;saint paul;saint rose;83;62;20;20;0;20;20;0;1;Entre 18 et 24 ans;Saint Paul;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";tom.dhoedt@gmail.com;20;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Saint rose;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+;entre 18 et 24 ans;;;saint louis;;84;;15;;;15;;;;Entre 18 et 24 ans;Saint Louis;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;louis.christophe59@gmail.com;15;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+;entre 18 et 24 ans;;;saint denis;;85;;15;;;15;;;;Entre 18 et 24 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Dès le premier verre;Ballon de vin;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";flrntmorel@gmail.com;15;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+50;entre 18 et 24 ans;;age;sainte rose;saint pierre;86;78;18;18;0;18;18;0;1;Entre 18 et 24 ans;SAinte rose;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;anstellcamille@gmail.com;18;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;St pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;français
+;entre 18 et 24 ans;;;sainte rose;;87;;16.5;;;16.5;;;;Entre 18 et 24 ans;Sainte rose;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;toinou.dehaine@gmail.com;16,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+;entre 18 et 24 ans;;;saint denis;;88;;15;;;15;;;;Entre 18 et 24 ans;saint denis;OUI;OUI;"Une malformation du cœur
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;zelie.becuwe@icloud.com;15;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+;entre 18 et 24 ans;;;saint leu;;89;;15;;;15;;;;Entre 18 et 24 ans;Saint Leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Verre de whisky;Tout au long de la vie;samiracharrad@gmail.com;15;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+51;entre 18 et 24 ans;saint gilles;age+ville;saint gilles;saint gilles;90;40;13;17.5;4.5;13;17.5;4.5;1;Entre 18 et 24 ans;Saint Gilles;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Verre de whisky;"Dans le ventre de la mère
+Tout au long de la vie";;13;Il devrait être plus présent pour sa femme;français;Entre 18 et 24 ans;Saint Gilles;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";17,50;français
+52;entre 18 et 24 ans;saint denis;age+ville;saint denis;saint denis;91;65;18;18;0;18;18;0;1;Entre 18 et 24 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;tom.dhoedt@gmail.com;18;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;français
+53;entre 18 et 24 ans;saint denis;age+ville;saint denis;saint denis;92;12;19.5;19;-0.5;19.5;19;-0.5;0;Entre 18 et 24 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";plouvier.emma@yahoo.com;19,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;19;français
+54;entre 18 et 24 ans;saint pierre;age+ville;saint pierre;saint pierre;93;58;14.5;19.5;5;14.5;19.5;5;1;Entre 18 et 24 ans;Saint PIerre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Verre de whisky;"Dans le ventre de la mère
+Tout au long de la vie";victoire.brouwer@gmail.com;14,50;Il devrait être plus présent pour sa femme;français;Entre 18 et 24 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19,50;français
+;entre 18 et 24 ans;;;saint paul;;94;;12.5;;;12.5;;;;Entre 18 et 24 ans;Saint Paul;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Verre de whisky;"Dans le ventre de la mère
+Tout au long de la vie";marie.grimmelpont59@gmail.com;12,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+55;entre 18 et 24 ans;saint pierre;age+ville;saint pierre;saint pierre;95;100;17;20;3;17;20;3;1;Entre 18 et 24 ans;Saint PIerre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";alix.malaquin@yahoo.com;17;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;créole
+56;entre 18 et 24 ans;saint gilles;age+ville;saint gilles;saint gilles;96;18;15;18;3;15;18;3;1;Entre 18 et 24 ans;Saint Gilles;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Verre de whisky;Dans le ventre de la mère;camillegentina@outlook.fr;15;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Saint Gilles;OUI;OUI;"Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;français
+;moins de 18 ans;;;saint denis;;97;;12;;;12;;;;Moins de 18 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 20 verres;Verre de rhum arrangé;Dans le ventre de la mère;sophie18@orange.fr;12;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+57;entre 25 et 29 ans;saint louis;age+ville;saint louis;saint louis;98;26;16;17;1;16;17;1;1;Entre 25 et 29 ans;Saint-Louis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";Un retard de croissance (petit poids et petite taille);Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;;16;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 25 et 29 ans;Saint Louis;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Une mort subite du nourrisson
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";17;français
+58;entre 30 et 34 ans;saint leu;age+ville;saint leu;saint leu;99;76;20;20;0;20;20;0;1;Entre 30 et 34 ans;Saint Leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";jeannewillot@hotmail.fr;20;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 30 et 34 ans;St Leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+;entre 25 et 29 ans;;;avirons;;100;;16.5;;;16.5;;;;Entre 25 et 29 ans;Les Avirons;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";Un retard mental;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";;16,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+;entre 40 et 44 ans;;;saint pierre;;101;;15.5;;;15.5;;;;Entre 40 et 44 ans;Saint-Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Verre de whisky;Dans le ventre de la mère;;15,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+59;entre 45 et 49 ans;avirons;age+ville;avirons;avirons;102;27;15.5;19.5;4;15.5;19.5;4;1;Entre 45 et 49 ans;Les Avirons;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;;15,50;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;Entre 45 et 49 ans;Les avirons;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";19,50;français
+60;entre 25 et 29 ans;petite ile;age+ville;petite ile;petite ile;103;35;14;19.5;5.5;14;19.5;5.5;1;Entre 25 et 29 ans;Petite-Île;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";Un retard mental;Dès le premier verre;Ballon de vin;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";lizapothin@gmail.com;14;Il devrait être plus présent pour sa femme;français;Entre 25 et 29 ans;Petite île;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19,50;français
+61;entre 35 et 39 ans;saint denis;age+ville;saint denis;saint denis;104;29;20;18.5;-1.5;20;18.5;-1.5;0;Entre 35 et 39 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";elsy_turbot@hotmail.fr;20;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 35 et 39 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";18,50;français
+62;entre 25 et 29 ans;saint denis;age+ville;saint denis;saint denis;105;31;18;20;2;18;20;2;1;Entre 25 et 29 ans;Saint denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Sherianesadek@gmail.com;18;Il devrait être plus présent pour sa femme;français;Entre 25 et 29 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+;entre 18 et 24 ans;;;terre sainte;;106;;16.5;;;16.5;;;;Entre 18 et 24 ans;Terre Sainte;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;vienneamel9@gmail.com;16,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;;;;;;;;;;;;
+63;entre 45 et 49 ans;saint pierre;age+ville;saint pierre;saint pierre;107;82;17;17;0;17;17;0;1;Entre 45 et 49 ans;Saint Pierre;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Verre de whisky;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";marion.menet@gmail.com;17;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 45 et 49 ans;Saint pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;Il devrait être plus présent pour sa femme;17;français
+;entre 35 et 39 ans;;;saint leu;;108;;13.5;;;13.5;;;;Entre 35 et 39 ans;Saint leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Verre de whisky;Tout au long de la vie;vpardessus2612@gmail.com;13,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+64;50 ans et plus;saint gilles;age+ville;saint gilles;saint gilles;109;33;16;19;3;16;19;3;1;50 ans et plus;Saint Gilles;OUI;NON;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";o.cookies1165@gmail.com;16;Il devrait être plus présent pour sa femme;français;50 ans et plus;Saint Gilles;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;19;français
+65;entre 30 et 34 ans;saint joseph;age+ville;saint joseph;saint joseph;110;75;17.5;17.5;0;17.5;17.5;0;1;Entre 30 et 34 ans;Saint Joseph;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;raissamarie.chevin@gmail.com;17,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 30 et 34 ans;Saint joseph;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait être plus présent pour sa femme";17,50;français
+66;entre 18 et 24 ans;saint pierre;age+ville;saint pierre;saint pierre;111;67;20;20;0;20;20;0;1;Entre 18 et 24 ans;Saint-Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";jadedorval@gmail.com;20;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+67;entre 25 et 29 ans;petite ile;age+ville;petite ile;petite ile;112;77;16;19;3;16;19;3;1;Entre 25 et 29 ans;Petite Île;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;mademoisellst@gmail.com;16;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;Entre 25 et 29 ans;Petite-Île;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;19;français
+68;entre 30 et 34 ans;tampon;age+ville;tampon;tampon;113;36;12.5;15.5;3;12.5;15.5;3;1;Entre 30 et 34 ans;Le Tampon;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Dès le premier verre;Verre de whisky;Tout au long de la vie;aljolina-pan@hotmail.fr;12,50;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;Entre 30 et 34 ans;Tampon;OUI;OUI;"Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";À partir de 5 verres;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";15,50;français
+;entre 35 et 39 ans;;;saint pierre;;114;;13.5;;;13.5;;;;Entre 35 et 39 ans;Saint-Pierre;OUI;OUI;"Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;felicitejennifer@gmail.com;13,50;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;;;;;;;;;;;;
+69;entre 30 et 34 ans;saint pierre;age+ville;saint pierre;saint pierre;115;9;17;14.5;-2.5;17;14.5;-2.5;0;Entre 30 et 34 ans;Saint-Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;gabriel.melanie@live.fr;17;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;Entre 30 et 34 ans;Saint Pierre;OUI;OUI;Des retards de développement neurologique;"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";14,50;français
+70;entre 25 et 29 ans;saint pierre;age+ville;saint pierre;saint pierre;116;60;18;20;2;18;20;2;1;Entre 25 et 29 ans;Saint-Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;theomeribo@gmail.com;18;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 25 et 29 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+71;entre 18 et 24 ans;saint leu;age+ville;saint leu;saint leu;117;37;18;17.5;-0.5;18;17.5;-0.5;0;Entre 18 et 24 ans;Saint leu;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;;18;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 18 et 24 ans;Saint leu;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";17,50;français
+72;entre 18 et 24 ans;tampon;age+ville;tampon;tampon;118;92;15.5;18;2.5;15.5;18;2.5;1;Entre 18 et 24 ans;Tampon;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;;15,50;Il devrait être plus présent pour sa femme;français;Entre 18 et 24 ans;Tampon;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;créole
+73;entre 35 et 39 ans;montagne;age+ville;montagne;montagne;119;53;17;19;2;17;19;2;1;Entre 35 et 39 ans;La montagne;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;carole.paris2@gmail.com;17;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 35 et 39 ans;La montagne;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19;français
+;entre 40 et 44 ans;;;saint pierre;;120;;12.5;;;12.5;;;;Entre 40 et 44 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Des retards de développement neurologique";Un retard mental;Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;joanneplanesse@yahoo.fr;12,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+74;entre 45 et 49 ans;saint pierre;age+ville;saint pierre;saint pierre;121;19;15.5;15.5;0;15.5;15.5;0;1;Entre 45 et 49 ans;Saint pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;nathalie.poussou@gmail.com;15,50;Il devrait être plus présent pour sa femme;français;Entre 45 et 49 ans;Saint Pierre;OUI;OUI;Une malformation du cœur;Un retard mental;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";15,50;français
+;entre 30 et 34 ans;;;saint pierre;;122;;10.5;;;10.5;;;;Entre 30 et 34 ans;Saint Pierre;OUI;OUI;Des retards de développement neurologique;"Un retard mental
+Un retard de croissance (petit poids et petite taille)";Dès le premier verre;Verre de whisky;"Dans le ventre de la mère
+Tout au long de la vie";soubadou.oceane@gmail.com;10,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+75;entre 30 et 34 ans;saint pierre;age+ville;saint pierre;saint pierre;123;55;17;20;3;17;20;3;1;Entre 30 et 34 ans;Saint pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;marion.pellerin78@gmail.com;17;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;Entre 30 et 34 ans;Saint pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+76;entre 30 et 34 ans;;age;saint pierre;tampon;124;70;15;14.5;-0.5;15;14.5;-0.5;0;Entre 30 et 34 ans;Saint pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;julia.pardes@live.fr;15;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 30 et 34 ans;Le Tampon;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Verre de whisky;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;14,50;français
+77;entre 25 et 29 ans;;age;saint pierre;petite ile;125;28;17.5;16;-1.5;17.5;16;-1.5;0;Entre 25 et 29 ans;Saint-Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";orlanejlt@gmail.com;17,50;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;français;Entre 25 et 29 ans;Petite île;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Tout au long de la vie";Dès le premier verre;Verre de whisky;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";16;français
+78;entre 25 et 29 ans;avirons;age+ville;avirons;avirons;126;39;18;18;0;18;18;0;1;Entre 25 et 29 ans;Les avirons;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;aurelia.brom@hotmail.fr;18;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 25 et 29 ans;Les avirons;OUI;OUI;"Un arrêt précoce de grossesse
+Une mort subite du nourrisson
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;français
+;entre 25 et 29 ans;;;saint pierre;;127;;16.5;;;16.5;;;;Entre 25 et 29 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;;16,50;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+;entre 25 et 29 ans;;;saint pierre;;128;;7;;;7;;;;Entre 25 et 29 ans;Saint pierre;NON;NON;"Un arrêt précoce de grossesse
+Une mort subite du nourrisson
+Des retards de développement neurologique";"Un retard mental
+Des malformations du visage";À partir de 5 verres;Verre de whisky;Tout au long de la vie;seinmorgane@gmail.com;7;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+79;entre 25 et 29 ans;tampon;age+ville;tampon;tampon;129;101;32;19;-13;16;19;3;1;Entre 25 et 29 ans;Tampon;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Une mort subite du nourrisson
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;estellelaura141619@gmail.com;32;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 25 et 29 ans;Tampon;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19;créole
+80;entre 25 et 29 ans;saint pierre;age+ville;saint pierre;saint pierre;130;59;19;17;-2;19;17;-2;0;Entre 25 et 29 ans;Saint Pierre;NON;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur";"Une déficience visuelle
+Des troubles du comportement";Plus d’un verre par jour;Tous contiennent la même quantité d’alcool;Tout au long de la vie;nadirsahbani51@gmail.com;19;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 25 et 29 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Plus d’un verre par mois;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";17;français
+;entre 25 et 29 ans;;;avirons;;131;;32;;;16;;;;Entre 25 et 29 ans;Les Avirons;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;aurelia.brom@hotmail.fr;32;Il devrait être plus présent pour sa femme;français;;;;;;;;;;;;
+81;entre 30 et 34 ans;saint gilles;age+ville;saint gilles;saint gilles;132;47;37;19;-18;18.5;19;0.5;1;Entre 30 et 34 ans;Saint gilles;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";elise.delebarre@hotmail.fr;37;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;Entre 30 et 34 ans;Saint Gilles;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19;français
+82;50 ans et plus;;age;;hem;133;64;40;18;-22;20;18;-2;0;50 ans et plus;;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";;40;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";français;50 ans et plus;Hem;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;français
+83;entre 25 et 29 ans;saint andre;age+ville;saint andre;saint andre;134;45;12;19;7;12;19;7;1;Entre 25 et 29 ans;Saint andré;OUI;OUI;Des troubles psychiatriques;Des troubles du comportement;Dès le premier verre;Tous contiennent la même quantité d’alcool;Dès 6 ans;helenalandrieu0000@gmail.com;12;Il devrait être plus présent pour sa femme;créole;Entre 25 et 29 ans;Saint André;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";19;français
+84;entre 40 et 44 ans;entre deux;age+ville;entre deux;entre deux;135;84;7.5;17;9.5;7.5;17;9.5;1;Entre 40 et 44 ans;Entre deux;OUI;NON;"Un arrêt précoce de grossesse
+Une mort subite du nourrisson";Des troubles du comportement;Dès le premier verre;Whisky;Dans le ventre de la mère;isabellevitry974@gmail.com;7,50;Il devrait être plus présent pour sa femme;créole;Entre 40 et 44 ans;Entre deux;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;17;créole
+;moins de 18 ans;;;avirons;;136;;8.5;;;8.5;;;;Moins de 18 ans;Avirons;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Des troubles du comportement";À partir de 5 verres;Mousseux;Dès 6 ans;melinahoarau@gmail.com;8,50;Il devrait être plus présent pour sa femme;créole;;;;;;;;;;;;
+85;entre 45 et 49 ans;tampon;age+ville;tampon;tampon;137;85;14;17.5;3.5;14;17.5;3.5;1;Entre 45 et 49 ans;Tampon;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";Un retard mental;Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;alexandrapayet@msn.com;14;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";créole;Entre 45 et 49 ans;Tampon;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";17,50;créole
+;entre 25 et 29 ans;;;chaloupe saint leu;;138;;8;;;8;;;;Entre 25 et 29 ans;La chaloupe saint leu;OUI;OUI;"De l’épilepsie
+Des retards de développement neurologique";"Des troubles du comportement
+Des malformations du visage";À partir de 20 verres;Whisky;Dès 6 ans;klarabulere@hotmail.fr;8;Il devrait être plus présent pour sa femme;créole;;;;;;;;;;;;
+86;entre 35 et 39 ans;saint phillipe;age+ville;saint phillipe;saint phillipe;139;87;11.5;20;8.5;11.5;20;8.5;1;Entre 35 et 39 ans;Saint Phillipe;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Cocktail;Tout au long de la vie;sixtinelalala@hotmail.fr;11,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 35 et 39 ans;Saint Phillipe;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;créole
+87;entre 18 et 24 ans;sainte marie;age+ville;sainte marie;sainte marie;140;8;11.5;19.5;8;11.5;19.5;8;1;Entre 18 et 24 ans;Sainte Marie;OUI;NON;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;marinettecacahuette@msn.com;11,50;Il devrait arrêter l’alcool;créole;Entre 18 et 24 ans;Sainte Marie;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19,50;français
+;entre 25 et 29 ans;;;possession;;141;;15;;;15;;;;Entre 25 et 29 ans;Possession;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;tomatepaskette@gmail.com;15;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;;;;;;;;;;;;
+;entre 45 et 49 ans;;;saint benoit;;142;;16.5;;;16.5;;;;Entre 45 et 49 ans;Saint Benoit;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+Tout au long de la vie";;16,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;;;;;;;;;;;;
+88;entre 25 et 29 ans;sainte anne;age+ville;sainte anne;sainte anne;143;89;9;19.5;10.5;9;19.5;10.5;1;Entre 25 et 29 ans;Sainte Anne;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Une déficience visuelle
+Des troubles du comportement";À partir de 5 verres;Whisky;Dans le ventre de la mère;maevasanchez974@gmail.com;9;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 25 et 29 ans;Sainte Anne;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19,50;créole
+89;entre 40 et 44 ans;;age;port;;144;90;18.5;4.5;-14;18.5;4.5;-14;0;Entre 40 et 44 ans;Le port;OUI;OUI;"Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";giselearlanda@icloud.com;18,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 40 et 44 ans;;OUI;NON;Des retards de développement neurologique;Un retard de croissance (petit poids et petite taille);Dès 6 ans;À partir de 20 verres;Whisky;Il devrait être plus présent pour sa femme;4,50;créole
+;entre 30 et 34 ans;;;saline les bains;;145;;5;;;5;;;;Entre 30 et 34 ans;Saline les bains;OUI;NON;Un arrêt précoce de grossesse;Un retard mental;À partir de 20 verres;Whisky;Dès 6 ans;melanieoderi97434@hotmail.fr;5;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;créole;;;;;;;;;;;;
+;entre 30 et 34 ans;;;port;;146;;7.5;;;7.5;;;;Entre 30 et 34 ans;Le port;OUI;OUI;"Des troubles psychiatriques
+Des retards de développement neurologique";Un retard de croissance (petit poids et petite taille);À partir de 5 verres;Whisky;Tout au long de la vie;;7,50;Il devrait être plus présent pour sa femme;créole;;;;;;;;;;;;
+;entre 25 et 29 ans;;;saint philipe;;147;;8;;;8;;;;Entre 25 et 29 ans;Saint Philipe;OUI;NON;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Whisky;Dès 6 ans;cleliahibain@hotmail.fr;8;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;;;;;;;;;;;;
+;entre 18 et 24 ans;;;tampon;;148;;12;;;12;;;;Entre 18 et 24 ans;Tampon;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Dès le premier verre;Cocktail;Tout au long de la vie;;12;Il devrait être plus présent pour sa femme;créole;;;;;;;;;;;;
+;entre 25 et 29 ans;;;tampon;;149;;5.5;;;5.5;;;;Entre 25 et 29 ans;Tampon;OUI;NON;"Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Des troubles du comportement";Plus d’1 verre par mois;Whisky;Dès 6 ans;tamponette@msn.com;5,50;Il devrait être plus présent pour sa femme;créole;;;;;;;;;;;;
+90;entre 35 et 39 ans;saint louis;age+ville;saint louis;saint louis;150;93;16.5;19;2.5;16.5;19;2.5;1;Entre 35 et 39 ans;Saint Louis;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans";mimimathy@gmail.com;16,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 35 et 39 ans;Saint Louis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19;créole
+91;entre 18 et 24 ans;3 bassins;age+ville;3 bassins;3 bassins;151;94;11.5;18.5;7;11.5;18.5;7;1;Entre 18 et 24 ans;3 bassins;OUI;NON;"Une malformation du cœur
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;zivavazi@msn.com;11,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 18 et 24 ans;3 bassins;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";18,50;créole
+92;entre 30 et 34 ans;;age;saline les bains;saint denis;152;74;18.5;18;-0.5;18.5;18;-0.5;0;Entre 30 et 34 ans;La Saline Les Bains;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";miia97433@gmail.com;18,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 30 et 34 ans;Saint Denis;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18;français
+93;entre 18 et 24 ans;sainte marie;age+ville;sainte marie;sainte marie;153;88;10;19.5;9.5;10;19.5;9.5;1;Entre 18 et 24 ans;Sainte Marie;OUI;OUI;"Une malformation du cœur
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Plus d’1 verre par mois;Rhum arrangé;Dès 6 ans;elayabaska@gmail.com;10;Il devrait être plus présent pour sa femme;créole;Entre 18 et 24 ans;Sainte Marie;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";19,50;créole
+;entre 25 et 29 ans;;;sainte marie;;154;;10.5;;;10.5;;;;Entre 25 et 29 ans;Sainte Marie;OUI;OUI;Des retards de développement neurologique;Des troubles du comportement;Dès le premier verre;Rhum arrangé;"Dans le ventre de la mère
+Tout au long de la vie";marinette974@hotmail.fr;10,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;;;;;;;;;;;;
+94;entre 30 et 34 ans;;age;saint paul;saline;155;91;15;19.5;4.5;15;19.5;4.5;1;Entre 30 et 34 ans;Saint Paul;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des retards de développement neurologique";"Un retard mental
+Une déficience visuelle
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans";nadege974@hotmail.fr;15;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 30 et 34 ans;Saline;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19,50;créole
+95;entre 35 et 39 ans;sindni;age+ville;sindni;sindni;156;96;5;15.5;10.5;5;15.5;10.5;1;Entre 35 et 39 ans;Sindni;OUI;NON;Une mort subite du nourrisson;"Une déficience visuelle
+Des malformations du visage";Plus d’1 verre par jour;Cocktail;Dès 6 ans;marieppp975@gmail.com;5;Il devrait être plus présent pour sa femme;créole;Entre 35 et 39 ans;Sindni;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";15,50;créole
+;entre 40 et 44 ans;;;saline;;157;;11;;;11;;;;Entre 40 et 44 ans;La saline;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Une mort subite du nourrisson
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";À partir de 5 verres;Rhum arrangé;Dans le ventre de la mère;melaniepayeeet@gmail.com;11;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool";créole;;;;;;;;;;;;
+96;entre 25 et 29 ans;saint benoit;age+ville;saint benoit;saint benoit;158;98;5.5;17.5;12;5.5;17.5;12;1;Entre 25 et 29 ans;Saint benoit;OUI;NON;Des retards de développement neurologique;"Un retard mental
+Des troubles du comportement
+Des malformations du visage";Plus d’1 verre par mois;Whisky;Dès 6 ans;benita@hotmail.fr;5,50;Il devrait être plus présent pour sa femme;créole;Entre 25 et 29 ans;Saint benoit;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;17,50;créole
+;entre 18 et 24 ans;;;saint benoit;;159;;10;;;10;;;;Entre 18 et 24 ans;St benoit;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";Plus d’1 verre par mois;Whisky;Dès 6 ans;chloepayet@gmail.com;10;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;créole;;;;;;;;;;;;
+;entre 25 et 29 ans;;;saint louis;;160;;7.5;;;7.5;;;;Entre 25 et 29 ans;Saint Louis;OUI;NON;"Une malformation du cœur
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";Plus d’1 verre par mois;Rhum arrangé;Dès 6 ans;lisapayet974@msn.com;7,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;;;;;;;;;;;;
+;entre 25 et 29 ans;;;tampon;;161;;13.5;;;13.5;;;;Entre 25 et 29 ans;Tampon;OUI;OUI;"Une malformation du cœur
+Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Whisky;Dans le ventre de la mère;larissa973@hotmail.fr;13,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;;;;;;;;;;;;
+97;entre 45 et 49 ans;etang sale;age+ville;etang sale;etang sale;162;102;8.5;18.5;10;8.5;18.5;10;1;Entre 45 et 49 ans;Étang salé;OUI;OUI;"Des troubles psychiatriques
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Des malformations du visage";Plus d’1 verre par mois;Rhum arrangé;Dans le ventre de la mère;virginiepayer974@hotmail.fr;8,50;Il devrait être plus présent pour sa femme;créole;Entre 45 et 49 ans;Étang salé;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait être plus présent pour sa femme";18,50;créole
+98;entre 30 et 34 ans;saint pierre;age+ville;saint pierre;saint pierre;163;21;20;18;-2;20;18;-2;0;Entre 30 et 34 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";loupardessus@gmail.com;20;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 30 et 34 ans;Saint Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool;18;français
+;entre 35 et 39 ans;;;etang sale;;164;;15;;;15;;;;Entre 35 et 39 ans;L'étang salé;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Whisky;"Dans le ventre de la mère
+Tout au long de la vie";alice.touchard@yahoo.fr;15;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;;;;;;;;;;;;
+;entre 40 et 44 ans;;;saint pierre;;165;;15.5;;;15.5;;;;Entre 40 et 44 ans;Saint pierre;NON;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;tiphaineee@hotmail.com;15,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;;;;;;;;;;;;
+99;entre 30 et 34 ans;;age;saint philippe;saint gilles;166;66;16.5;14;-2.5;16.5;14;-2.5;0;Entre 30 et 34 ans;St Philippe;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;marie-shanti.renie@orange.fr;16,50;Il devrait être plus présent pour sa femme;créole;Entre 30 et 34 ans;Saint Gilles;OUI;OUI;"Un arrêt précoce de grossesse
+Une mort subite du nourrisson";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des malformations du visage";Dans le ventre de la mère;Dès le premier verre;Tous contiennent la même quantité d’alcool;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";14;français
+100;entre 30 et 34 ans;saint pierre;age+ville;saint pierre;saint pierre;167;81;16.5;16.5;0;16.5;16.5;0;1;Entre 30 et 34 ans;Saint pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;Dans le ventre de la mère;sophie_payet@hotmail.fr;16,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 30 et 34 ans;Saint-Pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Tout au long de la vie;Dès le premier verre;Tous contiennent la même quantité d’alcool;Il devrait arrêter l’alcool;16,50;français
+101;entre 25 et 29 ans;saint pierre;age+ville;saint pierre;saint pierre;168;56;20;20;0;20;20;0;1;Entre 25 et 29 ans;St pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";;20;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 25 et 29 ans;Saint pierre;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";20;français
+;entre 30 et 34 ans;;;avirons;;169;;14.5;;;14.5;;;;Entre 30 et 34 ans;Avirons;OUI;OUI;"Un arrêt précoce de grossesse
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";Un retard mental;Dès le premier verre;Tous contiennent la même quantité d’alcool;Tout au long de la vie;solesamantha@yahoo.com;14,50;"Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;;;;;;;;;;;;
+102;entre 35 et 39 ans;avirons;age+ville;avirons;avirons;170;103;19.5;19.5;0;19.5;19.5;0;1;Entre 35 et 39 ans;Les Avirons;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";odilegoree@gmail.com;19,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 35 et 39 ans;Les Avirons;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";19,50;créole
+103;entre 25 et 29 ans;;age;97480;montagne;171;69;18.5;18.5;0;18.5;18.5;0;1;Entre 25 et 29 ans;97480;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Dans le ventre de la mère
+Tout au long de la vie";ohanaboyer@icloud.com;18,50;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;Entre 25 et 29 ans;La Montagne;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";"Dans le ventre de la mère
+Tout au long de la vie";Dès le premier verre;Tous contiennent la même quantité d’alcool;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";18,50;français
+;entre 35 et 39 ans;;;avirons;;172;;35;;;17.5;;;;Entre 35 et 39 ans;Les Avirons;OUI;OUI;"Un arrêt précoce de grossesse
+Une malformation du cœur
+Des troubles psychiatriques
+Une mort subite du nourrisson
+De l’épilepsie
+Des retards de développement neurologique";"Un retard mental
+Un retard de croissance (petit poids et petite taille)
+Une déficience visuelle
+Des troubles du comportement
+Des malformations du visage";Dès le premier verre;Un verre de vin;"Dans le ventre de la mère
+Dès 6 ans
+À l'adolescence
+À l’âge adulte
+Tout au long de la vie";odilegoree@gmail.com;35;"Lui aussi pourrait causer des troubles à l’enfant s’il consomme de l’alcool
+Il devrait arrêter l’alcool
+Il devrait être plus présent pour sa femme";créole;;;;;;;;;;;;

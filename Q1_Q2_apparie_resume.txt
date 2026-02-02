@@ -1,0 +1,45 @@
+Q1: 172 lignes
+Q2: 106 lignes
+Paires (appariées): 103
+- dont âge+ville: 87
+- dont âge seul (fallback): 16
+Q1 non appariées: 69
+Paires avec amélioration (Q2>=Q1): 83/103
+Gain moyen (Q2-Q1) sur paires scorées: 2.87
+Gain min/max (Q2-Q1) sur paires scorées: -14 / 17
+
+Top groupes par nombre de paires possibles (min(Q1,Q2)):
+- entre 30 et 34 ans | saint pierre : Q1=8 Q2=5 (max paires=5)
+- entre 25 et 29 ans | saint pierre : Q1=8 Q2=4 (max paires=4)
+- entre 45 et 49 ans | saint pierre : Q1=4 Q2=3 (max paires=3)
+- entre 35 et 39 ans | saint paul : Q1=4 Q2=3 (max paires=3)
+- entre 18 et 24 ans | sainte marie : Q1=4 Q2=3 (max paires=3)
+- entre 18 et 24 ans | saint gilles : Q1=4 Q2=3 (max paires=3)
+- entre 18 et 24 ans | saint pierre : Q1=3 Q2=6 (max paires=3)
+- entre 25 et 29 ans | saint leu : Q1=3 Q2=3 (max paires=3)
+- entre 25 et 29 ans | saint denis : Q1=3 Q2=3 (max paires=3)
+- entre 18 et 24 ans | saline : Q1=3 Q2=3 (max paires=3)
+- entre 18 et 24 ans | saint denis : Q1=6 Q2=2 (max paires=2)
+- entre 18 et 24 ans | tampon : Q1=3 Q2=2 (max paires=2)
+- entre 35 et 39 ans | montagne : Q1=2 Q2=3 (max paires=2)
+- entre 30 et 34 ans | saint gilles : Q1=2 Q2=3 (max paires=2)
+- entre 30 et 34 ans | saint denis : Q1=2 Q2=3 (max paires=2)
+
+Groupes avec Q1 non appariées (malgré présence Q2):
+- entre 25 et 29 ans | saint pierre : Q1 en trop = 3
+- entre 18 et 24 ans | saint denis : Q1 en trop = 3
+- moins de 18 ans | saint pierre : Q1 en trop = 2
+- entre 35 et 39 ans | saint pierre : Q1 en trop = 2
+- entre 30 et 34 ans | saint pierre : Q1 en trop = 2
+- entre 25 et 29 ans | tampon : Q1 en trop = 2
+- entre 25 et 29 ans | avirons : Q1 en trop = 2
+- entre 18 et 24 ans | saint leu : Q1 en trop = 2
+- entre 45 et 49 ans | saint pierre : Q1 en trop = 1
+- entre 40 et 44 ans | saline : Q1 en trop = 1
+- entre 35 et 39 ans | saint phillipe : Q1 en trop = 1
+- entre 35 et 39 ans | saint paul : Q1 en trop = 1
+- entre 35 et 39 ans | saint leu : Q1 en trop = 1
+- entre 35 et 39 ans | etang sale : Q1 en trop = 1
+- entre 35 et 39 ans | eperon : Q1 en trop = 1
+
+Attention: 5 lignes Q1 ont une note > 20 (ex: '32') et sont divisées par 2 pour l’optimisation.

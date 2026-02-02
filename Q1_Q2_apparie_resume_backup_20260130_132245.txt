@@ -1,0 +1,41 @@
+Q1: 103 lignes
+Q2: 72 lignes
+Paires (appariées): 69
+- dont âge+ville: 56
+- dont âge seul (fallback): 13
+Q1 non appariées: 34
+Paires avec amélioration (Q2>=Q1): 55/69
+Gain moyen (Q2-Q1) sur paires scorées: 2.3
+Gain min/max (Q2-Q1) sur paires scorées: -4 / 17
+
+Top groupes par nombre de paires possibles (min(Q1,Q2)):
+- entre 25 et 29 ans | saint pierre : Q1=7 Q2=4 (max paires=4)
+- entre 30 et 34 ans | saint pierre : Q1=6 Q2=4 (max paires=4)
+- entre 18 et 24 ans | saint gilles : Q1=4 Q2=3 (max paires=3)
+- entre 18 et 24 ans | saint pierre : Q1=3 Q2=5 (max paires=3)
+- entre 45 et 49 ans | saint pierre : Q1=3 Q2=3 (max paires=3)
+- entre 25 et 29 ans | saint denis : Q1=3 Q2=3 (max paires=3)
+- entre 18 et 24 ans | saint denis : Q1=5 Q2=2 (max paires=2)
+- entre 35 et 39 ans | saint paul : Q1=3 Q2=2 (max paires=2)
+- entre 35 et 39 ans | montagne : Q1=2 Q2=3 (max paires=2)
+- entre 30 et 34 ans | saint gilles : Q1=2 Q2=3 (max paires=2)
+- entre 25 et 29 ans | saint leu : Q1=2 Q2=3 (max paires=2)
+- entre 25 et 29 ans | petite ile : Q1=2 Q2=3 (max paires=2)
+- entre 30 et 34 ans | saint leu : Q1=2 Q2=2 (max paires=2)
+- entre 30 et 34 ans | saint joseph : Q1=2 Q2=2 (max paires=2)
+- moins de 18 ans | saint pierre : Q1=3 Q2=1 (max paires=1)
+
+Groupes avec Q1 non appariées (malgré présence Q2):
+- entre 18 et 24 ans | saint denis : Q1 en trop = 3
+- moins de 18 ans | saint pierre : Q1 en trop = 2
+- entre 25 et 29 ans | saint pierre : Q1 en trop = 2
+- entre 18 et 24 ans | saint leu : Q1 en trop = 2
+- entre 35 et 39 ans | saint paul : Q1 en trop = 1
+- entre 35 et 39 ans | eperon : Q1 en trop = 1
+- entre 30 et 34 ans | saint pierre : Q1 en trop = 1
+- entre 25 et 29 ans | saint paul : Q1 en trop = 1
+- entre 18 et 24 ans | tampon : Q1 en trop = 1
+- entre 18 et 24 ans | saint louis : Q1 en trop = 1
+- entre 18 et 24 ans | saint gilles : Q1 en trop = 1
+
+Attention: 4 lignes Q1 ont une note > 20 (ex: '32') et sont divisées par 2 pour l’optimisation.

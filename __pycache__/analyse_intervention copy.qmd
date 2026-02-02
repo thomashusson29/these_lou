@@ -1,0 +1,368 @@
+---
+title: "Impact de l'information (Q1 avant vs Q2 après)"
+format:
+  html:
+    toc: true
+    df-print: paged
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+# Utile en environnement "sandbox" : forcer les caches R dans le projet
+cache_dir <- file.path(getwd(), ".r_cache")
+dir.create(cache_dir, showWarnings = FALSE, recursive = TRUE)
+Sys.setenv(R_USER_CACHE_DIR = cache_dir)
+Sys.setenv(XDG_CACHE_HOME = cache_dir)
+
+library(dplyr)
+library(tidyr)
+library(readr)
+library(ggplot2)
+library(gtsummary)
+library(rstatix)
+```
+
+## Données
+
+Ce rapport utilise le fichier apparié `Q1_Q2_apparie.csv` (1 ligne = 1 participante du Q1, appariée à une ligne du Q2 quand possible).
+
+```{r}
+data_raw <- readr::read_delim(
+  "Q1_Q2_apparie.csv",
+  delim = ";",
+  locale = locale(encoding = "UTF-8"),
+  show_col_types = FALSE,
+  trim_ws = TRUE
+)
+
+data <- data_raw %>%
+  mutate(
+    has_match = !is.na(Q2_row) & Q2_row != ""
+  )
+
+data_matched <- data %>% filter(has_match)
+
+n_q1 <- nrow(data)
+n_q2_matched <- nrow(data_matched)
+```
+
+```{r}
+cat("Nombre de lignes Q1 :", n_q1, "\n")
+cat("Nombre apparié (Q1 avec Q2) :", n_q2_matched, "\n")
+cat("Non appariées :", n_q1 - n_q2_matched, "\n")
+```
+
+## Préparation des scores
+
+Le fichier contient 2 versions des scores :
+
+- `Q1_score_parsed` / `Q2_score_parsed`: scores "tels que lus" (numériques).
+- `Q1_score_utilisee` / `Q2_score_utilisee`: scores utilisés pour optimiser l'appariement (les rares `Q1_score_parsed > 20` sont divisés par 2).
+
+Pour l'analyse avant/après, on utilise par défaut les scores `*_score_utilisee` (comparables sur une échelle commune).
+
+```{r}
+data_matched <- data_matched %>%
+  mutate(
+    score_pre = as.numeric(Q1_score_utilisee),
+    score_post = as.numeric(Q2_score_utilisee),
+    score_diff = score_post - score_pre
+  ) %>%
+  filter(!is.na(score_pre), !is.na(score_post))
+
+summary(data_matched$score_pre)
+summary(data_matched$score_post)
+summary(data_matched$score_diff)
+```
+
+## Description (participants appariés)
+
+```{r}
+data_matched %>%
+  select(age_key, Q1_city_key, score_pre, score_post, score_diff) %>%
+  tbl_summary(
+    statistic = list(
+      all_continuous() ~ "{mean} ± {sd}",
+      all_categorical() ~ "{n} ({p}%)"
+    ),
+    missing = "no"
+  ) %>%
+  modify_header(label ~ "**Variable**") %>%
+  bold_labels()
+```
+
+## Impact global sur le score
+
+### Données longues (pour graphiques)
+
+```{r}
+data_matched_long <- data_matched %>%
+  select(Q1_row, score_pre, score_post) %>%
+  pivot_longer(
+    cols = c(score_pre, score_post),
+    names_to = "time",
+    values_to = "score"
+  ) %>%
+  mutate(
+    id = as.character(Q1_row),
+    time = recode(time, score_pre = "Avant (Q1)", score_post = "Après (Q2)"),
+    time = factor(time, levels = c("Avant (Q1)", "Après (Q2)"))
+  )
+```
+
+### Comparaison des moyennes (table)
+
+```{r}
+data_matched %>%
+  select(score_pre, score_post, score_diff) %>%
+  tbl_summary(
+    statistic = list(all_continuous() ~ "{mean} ± {sd}"),
+    digits = all_continuous() ~ 2,
+    missing = "no"
+  ) %>%
+  modify_header(label ~ "**Mesure**", stat_0 ~ "**Participants appariés**") %>%
+  bold_labels()
+```
+
+### Boxplots côte à côte (score global)
+
+```{r}
+ggplot(data_matched_long, aes(x = time, y = score, fill = time)) +
+  geom_boxplot(width = 0.55, outlier.alpha = 0.2) +
+  geom_jitter(width = 0.08, alpha = 0.35, size = 1) +
+  scale_fill_manual(values = c("Avant (Q1)" = "#4C78A8", "Après (Q2)" = "#54A24B")) +
+  scale_y_continuous(limits = c(0, 20), breaks = seq(0, 20, 2)) +
+  labs(x = NULL, y = "Score global") +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "none")
+```
+
+### Diagramme spaghetti (évolution individuelle)
+
+```{r}
+ggplot(data_matched_long, aes(x = time, y = score, group = id)) +
+  geom_line(alpha = 0.18, linewidth = 0.5, color = "grey35") +
+  geom_point(alpha = 0.6, size = 1.2, color = "grey20") +
+  stat_summary(aes(group = 1), fun = mean, geom = "line", linewidth = 1.1, color = "#4C78A8") +
+  stat_summary(aes(group = 1), fun = mean, geom = "point", size = 2.2, color = "#4C78A8") +
+  scale_y_continuous(limits = c(0, 20), breaks = seq(0, 20, 2)) +
+  labs(x = NULL, y = "Score global") +
+  theme_minimal(base_size = 13)
+```
+
+### Analyse et interprétation (avant/après)
+
+Sur les participantes appariées ($n = `r nrow(data_matched)`$), le score moyen passe de **`r round(mean(data_matched$score_pre), 2)`** (avant) à **`r round(mean(data_matched$score_post), 2)`** (après), soit un gain moyen de **`r round(mean(data_matched$score_diff), 2)`** points.
+
+### Test statistique (test t apparié / Student)
+
+Le test principal ci-dessous est un **test t apparié** (Student) qui compare la moyenne des différences à 0 (après - avant). Par défaut, le test est unilatéral (après > avant).
+
+On teste l'hypothèse d'une amélioration des scores après information.
+
+```{r}
+alternative <- "greater"
+
+tt <- t.test(
+  data_matched$score_post,
+  data_matched$score_pre,
+  paired = TRUE,
+  alternative = alternative
+)
+
+tt
+
+data_matched %>%
+  summarise(
+    mean_diff = mean(score_diff),
+    ci_low = tt$conf.int[1],
+    ci_high = tt$conf.int[2],
+    cohens_dz = mean(score_diff) / sd(score_diff),
+    n = n()
+  )
+```
+
+### Test statistique (Wilcoxon apparié)
+
+Alternative non paramétrique sur l'échantillon observé (apparié).
+
+```{r}
+wt <- wilcox.test(
+  data_matched$score_post,
+  data_matched$score_pre,
+  paired = TRUE,
+  alternative = alternative,
+  exact = FALSE
+)
+
+wt
+```
+
+### Bootstrap (1000 repiquages) du gain moyen
+
+Objectif : estimer l'incertitude du **gain moyen** sans s'appuyer sur l'hypothèse de normalité (repiquage des participantes appariées).
+
+```{r}
+set.seed(123)
+
+B <- 1000
+n <- nrow(data_matched)
+
+boot_idx <- replicate(B, sample.int(n, size = n, replace = TRUE))
+
+boot_mean_pre <- apply(boot_idx, 2, \(idx) mean(data_matched$score_pre[idx]))
+boot_mean_post <- apply(boot_idx, 2, \(idx) mean(data_matched$score_post[idx]))
+boot_mean_diff <- apply(boot_idx, 2, \(idx) mean(data_matched$score_diff[idx]))
+
+boot <- tibble(
+  rep = seq_len(B),
+  mean_pre = boot_mean_pre,
+  mean_post = boot_mean_post,
+  mean_diff = boot_mean_diff
+)
+
+tt_boot <- t.test(
+  boot$mean_post,
+  boot$mean_pre,
+  paired = TRUE,
+  alternative = alternative
+)
+
+mean_diff_obs <- mean(data_matched$score_diff)
+ci_diff <- quantile(boot$mean_diff, probs = c(0.025, 0.975))
+
+p_boot <- dplyr::case_when(
+  alternative == "greater" ~ mean(boot$mean_diff <= 0),
+  alternative == "less" ~ mean(boot$mean_diff >= 0),
+  alternative == "two.sided" ~ min(1, 2 * min(mean(boot$mean_diff <= 0), mean(boot$mean_diff >= 0))),
+  TRUE ~ NA_real_
+)
+
+tt_boot
+
+tibble(
+  n = n,
+  B = B,
+  mean_diff_obs = mean_diff_obs,
+  ci_2_5 = unname(ci_diff[1]),
+  ci_97_5 = unname(ci_diff[2]),
+  tt_boot_ci_low = tt_boot$conf.int[1],
+  tt_boot_ci_high = tt_boot$conf.int[2],
+  tt_boot_p = tt_boot$p.value,
+  p_boot = p_boot
+)
+```
+
+### Densités des moyennes (bootstrap) + moyenne observée
+
+Les courbes de densité représentent la distribution bootstrap des **moyennes** (après 1000 repiquages). La ligne verticale pointillée correspond à la moyenne observée (avant bootstrap).
+
+```{r}
+obs_means <- tibble(
+  time = factor(c("Avant (Q1)", "Après (Q2)"), levels = c("Avant (Q1)", "Après (Q2)")),
+  mean_score = c(mean(data_matched$score_pre), mean(data_matched$score_post))
+)
+
+ggplot(data_matched_long, aes(x = score, fill = time, color = time)) +
+  geom_density(alpha = 0.25, linewidth = 0.8) +
+  geom_vline(
+    data = obs_means,
+    aes(xintercept = mean_score, color = time),
+    linetype = "dashed",
+    linewidth = 1
+  ) +
+  scale_fill_manual(values = c("Avant (Q1)" = "#4C78A8", "Après (Q2)" = "#54A24B")) +
+  scale_color_manual(values = c("Avant (Q1)" = "#4C78A8", "Après (Q2)" = "#54A24B")) +
+  scale_x_continuous(limits = c(0, 20), breaks = seq(0, 20, 2)) +
+  labs(x = "Score observé (avant bootstrap)", y = "Densité", fill = NULL, color = NULL) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "top")
+```
+
+```{r}
+boot_means_long <- boot %>%
+  select(mean_pre, mean_post) %>%
+  pivot_longer(cols = c(mean_pre, mean_post), names_to = "time", values_to = "mean_score") %>%
+  mutate(
+    time = recode(time, mean_pre = "Avant (Q1)", mean_post = "Après (Q2)"),
+    time = factor(time, levels = c("Avant (Q1)", "Après (Q2)"))
+  )
+
+ggplot(boot_means_long, aes(x = mean_score, fill = time, color = time)) +
+  geom_density(alpha = 0.25, linewidth = 0.8) +
+  geom_vline(
+    data = obs_means,
+    aes(xintercept = mean_score, color = time),
+    linetype = "dashed",
+    linewidth = 1
+  ) +
+  scale_fill_manual(values = c("Avant (Q1)" = "#4C78A8", "Après (Q2)" = "#54A24B")) +
+  scale_color_manual(values = c("Avant (Q1)" = "#4C78A8", "Après (Q2)" = "#54A24B")) +
+  labs(x = "Moyenne bootstrap du score", y = "Densité", fill = NULL, color = NULL) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "top")
+```
+
+### Résumé des gains
+
+```{r}
+data_matched %>%
+  summarise(
+    n = n(),
+    mean_pre = mean(score_pre),
+    mean_post = mean(score_post),
+    mean_diff = mean(score_diff),
+    sd_diff = sd(score_diff),
+    median_diff = median(score_diff),
+    iqr_diff = IQR(score_diff),
+    prop_improved = mean(score_diff >= 0)
+  )
+```
+
+### Test de signe (proportion de paires améliorées)
+
+Le test de signe compare le nombre de paires où le score augmente vs diminue (les égalités sont ignorées).
+
+```{r}
+n_pos <- sum(data_matched$score_diff > 0, na.rm = TRUE)
+n_neg <- sum(data_matched$score_diff < 0, na.rm = TRUE)
+n_ties <- sum(data_matched$score_diff == 0, na.rm = TRUE)
+
+cat("n_pos :", n_pos, "| n_neg :", n_neg, "| n_egalites :", n_ties, "\n")
+
+if ((n_pos + n_neg) > 0) {
+  binom.test(n_pos, n_pos + n_neg, p = 0.5, alternative = "greater")
+}
+```
+
+## Analyse de sensibilité (optionnel): scores "parsed" (sans ajustement)
+
+```{r}
+data_parsed <- data_raw %>%
+  filter(!is.na(Q2_row) & Q2_row != "") %>%
+  mutate(
+    score_pre = as.numeric(Q1_score_parsed),
+    score_post = as.numeric(Q2_score_parsed),
+    score_diff = score_post - score_pre
+  ) %>%
+  filter(!is.na(score_pre), !is.na(score_post))
+
+summary(data_parsed$score_pre)
+summary(data_parsed$score_post)
+summary(data_parsed$score_diff)
+```
+
+## Analyse par question (optionnel, nécessite une clé de correction)
+
+Si tu veux comparer question par question (réponses correctes vs incorrectes avant/après), il faut une **clé de correction** (réponse(s) attendue(s) pour chaque item).
+
+Ensuite on peut :
+
+- binariser chaque réponse en `correct = TRUE/FALSE`
+- utiliser un test de **McNemar** (apparié) pour chaque question
+- faire une table `tbl_summary()` des pourcentages de réponses correctes avant/après
+
+Dis-moi si tu veux cette partie et je te mets la structure automatiquement une fois que tu me donnes la clé de correction (même sous forme de liste simple).
